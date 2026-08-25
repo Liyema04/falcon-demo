@@ -1,9 +1,18 @@
 "use client";
 
 import { Button, useMediaQuery } from "@relume_io/relume-ui";
-import { motion } from "framer-motion";
+import { motion, px } from "framer-motion";
 import React, { useState } from "react";
 import { RxChevronDown, RxChevronRight } from "react-icons/rx";
+
+// Service Drop down Icons:
+import roofIcon from "../assets/icons/roof.svg"
+import bellIcon from "../assets/icons/bell.svg"
+import contactsIcon from "../assets/icons/contacts.svg"
+import stairsIcon from "../assets/icons/stairs.svg"
+import workIcon from "../assets/icons/work-hours.svg"
+import bagIcon from "../assets/icons/shopping-bag.svg"
+
 
 const useRelume = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -42,14 +51,15 @@ export function Navbar5() {
   return (
     <section
       id="relume"
-      className="relative flex w-full items-center justify-between border-b border-border-primary bg-background-primary lg:min-h-18 lg:px-[5%]"
+      className="relative flex w-full items-center justify-between bg-background-secondary shadow-xl lg:min-h-18 lg:px-[5%]"
     >
       <div className="size-full lg:flex lg:items-center lg:justify-between">
         <div className="lg:flex">
           <div className="flex min-h-16 items-center justify-between px-[5%] md:min-h-18 lg:min-h-full lg:px-0">
             <a href="#">
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/logo-image.svg"
+                src="/src/assets/Falcon-roofing-logo.png"
+                width="65px"
                 alt="Logo image"
               />
             </a>
@@ -117,7 +127,7 @@ export function Navbar5() {
               href="#"
               className="block py-3 text-md first:pt-7 lg:px-4 lg:py-6 lg:text-base first:lg:pt-6"
             >
-              Services
+              About
             </a>
             <a
               href="#"
@@ -162,7 +172,7 @@ export function Navbar5() {
                 exit="close"
                 animate={useActive.animateDropdownMenu}
                 transition={{ duration: 0.3 }}
-                className="bottom-auto left-0 top-full w-full min-w-full max-w-full overflow-hidden bg-background-primary lg:absolute lg:w-[100vw] lg:border-b lg:border-border-primary lg:px-[5%] lg:[--height-close:auto]"
+                className="bottom-auto left-0 top-full w-full min-w-full max-w-full overflow-hidden bg-background-secondary lg:absolute lg:w-[100vw] lg:px-[5%] lg:shadow-[0_16px_36px_rgba(8,1,1,0.18)] lg:[--height-close:auto]"
               >
                 <div className="mx-auto flex size-full max-w-full items-center justify-between">
                   <div className="w-full lg:flex">
@@ -177,8 +187,10 @@ export function Navbar5() {
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
                             <img
-                              src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
+                              src={roofIcon}
                               alt="Icon 1"
+                              width={24}
+                              height={24}
                             />
                           </div>
                           <div className="flex flex-col items-start justify-center">
@@ -194,8 +206,10 @@ export function Navbar5() {
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
                             <img
-                              src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
+                              src={roofIcon}
                               alt="Icon 2"
+                              width={24}
+                              height={24}
                             />
                           </div>
                           <div className="flex flex-col items-start justify-center">
@@ -211,8 +225,10 @@ export function Navbar5() {
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
                             <img
-                              src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
+                              src={roofIcon}
                               alt="Icon 3"
+                              width={24}
+                              height={24}
                             />
                           </div>
                           <div className="flex flex-col items-start justify-center">
@@ -228,8 +244,10 @@ export function Navbar5() {
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
                             <img
-                              src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
+                              src={stairsIcon}
                               alt="Icon 4"
+                              width={24}
+                              height={24}
                             />
                           </div>
                           <div className="flex flex-col items-start justify-center">
@@ -250,12 +268,14 @@ export function Navbar5() {
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
                             <img
-                              src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
+                              src={bagIcon}
                               alt="Icon 5"
+                              width={24}
+                              height={24}
                             />
                           </div>
                           <div className="flex flex-col items-start justify-center">
-                            <h5 className="font-semibold">About</h5>
+                            <h5 className="font-semibold">Who Are We</h5>
                             <p className="hidden text-sm md:block">
                               Our story and workmanship
                             </p>
@@ -267,12 +287,14 @@ export function Navbar5() {
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
                             <img
-                              src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
+                              src={contactsIcon}
                               alt="Icon 6"
+                              width={24}
+                              height={24}
                             />
                           </div>
                           <div className="flex flex-col items-start justify-center">
-                            <h5 className="font-semibold">Contact</h5>
+                            <h5 className="font-semibold">Contact Us</h5>
                             <p className="hidden text-sm md:block">
                               Get in touch with our team
                             </p>
@@ -284,8 +306,10 @@ export function Navbar5() {
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
                             <img
-                              src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
+                              src={bellIcon}
                               alt="Icon 7"
+                              width={24}
+                              height={24}
                             />
                           </div>
                           <div className="flex flex-col items-start justify-center">
@@ -301,8 +325,10 @@ export function Navbar5() {
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
                             <img
-                              src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
+                              src={workIcon}
                               alt="Icon 8"
+                              width={24}
+                              height={24}
                             />
                           </div>
                           <div className="flex flex-col items-start justify-center">
@@ -412,10 +438,10 @@ export function Navbar5() {
           </motion.div>
         </div>
         <div className="hidden lg:flex lg:gap-4">
-          <Button title="Call" variant="secondary" size="sm">
+          <Button className="button-falcon-secondary bg-falcon-ink-5 border-none" title="Call" variant="secondary" size="sm">
             Call
           </Button>
-          <Button title="Quote" size="sm">
+          <Button className="button-falcon-primary" title="Quote" size="sm">
             Quote
           </Button>
         </div>

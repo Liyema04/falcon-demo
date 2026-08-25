@@ -1,3 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Roboto+Condensed:wght@700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-falcon-white font-sans text-falcon-body text-falcon-ink;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold;
+  }
+}
+
+@layer components {
+  .button-falcon-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-falcon-button bg-falcon-primary px-6 py-2.5 font-sans text-falcon-body font-medium text-falcon-white transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-falcon-totem-pole disabled:pointer-events-none disabled:opacity-50;
+  }
+
+  .button-falcon-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-falcon-button bg-falcon-transparent px-6 py-2.5 font-sans text-falcon-body font-medium text-falcon-ink transition-colors hover:bg-falcon-ink/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-falcon-totem-pole disabled:pointer-events-none disabled:opacity-50;
+  }
+
+  .button-falcon-control {
+    @apply inline-flex size-12 items-center justify-center rounded-falcon-control border border-falcon-white bg-falcon-surface text-falcon-ink transition-colors hover:bg-falcon-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-falcon-totem-pole disabled:pointer-events-none disabled:opacity-50;
+  }
+}

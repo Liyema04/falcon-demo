@@ -74,8 +74,8 @@ export function Header102() {
           repair with a single objective: a roof that endures.
         </p>
         <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-          <Button title="Request a quote">Request a quote</Button>
-          <Button title="WhatsApp us" variant="secondary">
+          <Button className="button-falcon-primary" title="Request a quote">Request a quote</Button>
+          <Button className="button-falcon-secondary bg-falcon-ink-5 border-none" title="WhatsApp us" variant="secondary">
             WhatsApp us
           </Button>
         </div>
@@ -88,72 +88,72 @@ export function Header102() {
           className="relative left-0 right-0 z-10 block h-full overflow-hidden whitespace-nowrap pl-4"
         >
           <CarouselContent>
+            {/* Slide 1 */}
             <CarouselItem className="pl-0">
               <div className="relative inline-block size-full whitespace-normal text-left align-top">
                 <div className="flex h-screen flex-col">
                   <div className="relative flex-1">
                     <img
                       className="absolute size-full object-cover"
-                      src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                      alt="Relume placeholder image 1"
+                      src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787688806/still-2-clean_tmpntd.avif"
+                      alt="Complete roof"
                     />
                   </div>
                   <div className="relative bg-background-secondary px-6 pb-32 pt-6 sm:px-8 sm:pt-8">
                     <div className="w-full max-w-lg">
                       <h6 className="mb-1 text-md font-bold leading-[1.4] md:text-xl">
-                        Roof Installation
+                        Professional Installations
                       </h6>
                       <p>
-                        Professionalism maintained throughout the entire
-                        engagement.
+                        We maintain professionalism throughout every stage of the project
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
             </CarouselItem>
+            {/* Slide 2 */}
             <CarouselItem className="pl-0">
               <div className="relative inline-block size-full whitespace-normal text-left align-top">
                 <div className="flex h-screen flex-col">
                   <div className="relative flex-1">
                     <img
                       className="absolute size-full object-cover"
-                      src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                      alt="Relume placeholder image 2"
+                      src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787689043/roof-repair-clean_viyxzl.avif"
+                      alt="Construction workers inspecting roof"
                     />
                   </div>
                   <div className="relative bg-background-secondary px-6 pb-32 pt-6 sm:px-8 sm:pt-8">
                     <div className="w-full max-w-lg">
                       <h6 className="mb-1 text-md font-bold leading-[1.4] md:text-xl">
-                        Roof Installation
+                        Thorough Inspections
                       </h6>
                       <p>
-                        Professionalism maintained throughout the entire
-                        engagement.
+                        We evaluate your roof's condition to ensure safety during inclement weather
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
             </CarouselItem>
+            {/* Slide 3 */}
             <CarouselItem className="pl-0">
               <div className="relative inline-block size-full whitespace-normal text-left align-top">
                 <div className="flex h-screen flex-col">
                   <div className="relative flex-1">
                     <img
                       className="absolute size-full object-cover"
-                      src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                      alt="Relume placeholder image 3"
+                      src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787689050/roof-damage-repair-clean_vk2shm.avif"
+                      alt="Construction worker repairing roof"
                     />
                   </div>
                   <div className="relative bg-background-secondary px-6 pb-32 pt-6 sm:px-8 sm:pt-8">
                     <div className="w-full max-w-lg">
                       <h6 className="mb-1 text-md font-bold leading-[1.4] md:text-xl">
-                        Roof Installation
+                        Efficient Repairs
                       </h6>
                       <p>
-                        Professionalism maintained throughout the entire
-                        engagement.
+                        We quickly fix roof damage to restore safety and prevent further issues
                       </p>
                     </div>
                   </div>
@@ -176,8 +176,8 @@ export function Header102() {
                 className={carousel.dotClassName(2)}
               />
             </div>
-            <CarouselPrevious className="bottom-2 left-auto right-[5.5rem] top-auto size-12 bg-transparent md:right-24" />
-            <CarouselNext className="bottom-2 left-auto right-8 top-auto size-12 bg-transparent" />
+            <CarouselPrevious className="bottom-2 left-auto right-[5.5rem] top-auto size-12 bg-falcon-ink-5 border-none md:right-24" />
+            <CarouselNext className="bottom-2 left-auto right-8 top-auto size-12 bg-falcon-ink-5 border-none" />
           </div>
         </Carousel>
       </div>
