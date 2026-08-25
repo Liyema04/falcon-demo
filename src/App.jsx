@@ -1,18 +1,29 @@
-import Navbar from './components/Navbar.jsx'
+import { Navbar5 } from "./components/Navbar5";
+import { Header102 } from "./components/Header102";
+import { Portfolio8 } from "./components/Portfolio8";
+import { Layout504 } from "./components/Layout504";
+import { Layout401 } from "./components/Layout401";
+import { Layout375 } from "./components/Layout375";
+import { Contact6 } from "./components/Contact6";
+import { Footer6 } from "./components/Footer6";
 
 function Page() {
   return (
     <>
-      <Navbar />
+      <Navbar5 />
+      <Header102 />
+      <Portfolio8 />
+      <Layout504 />
+      <Layout401 />
+      <Layout375 />
+      <Contact6 />
+      <Footer6 />
     </>
-  )
+  );
 }
 
 export default function App() {
-
   return (
-    <>
-      <Page />
-    </>
+    <Page/>
   )
 }
