@@ -28,7 +28,7 @@ export function Portfolio8() {
                 />
               </a>
             </div>
-            <div className="px-5 py-6 sm:px-6 rounded-b-3xl bg-falcon-cream">
+            <div className="px-5 py-6 sm:px-6 rounded-b-3xl bg-falcon-cream shadow-large">
               <h3 className="mb-2 text-xl font-bold md:text-2xl">
                 <a href="#">Centurion roof replacement</a>
               </h3>
@@ -83,7 +83,7 @@ export function Portfolio8() {
                 />
               </a>
             </div>
-            <div className="px-5 py-6 sm:px-6 rounded-b-3xl bg-falcon-cream">
+            <div className="px-5 py-6 sm:px-6 rounded-b-3xl bg-falcon-cream shadow-large">
               <h3 className="mb-2 text-xl font-bold md:text-2xl">
                 <a href="#">Roof repair services</a>
               </h3>

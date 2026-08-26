@@ -6,7 +6,7 @@ import { RxChevronRight } from "react-icons/rx";
 
 export function Layout375() {
   return (
-    <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
+    <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28 bg-background-secondary">
       <div className="container">
         <div className="rb-12 mb-12 md:mb-18 lg:mb-20">
           <div className="mx-auto max-w-lg text-center">
@@ -21,15 +21,16 @@ export function Layout375() {
         </div>
         <div className="grid grid-cols-1 gap-6 md:gap-8">
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8 lg:grid-cols-4">
-            <div className="flex flex-col border border-border-primary">
-              <div className="flex items-center justify-center">
+            {/* Card 1 */}
+            <div className="flex flex-col"> 
+              <div className="flex items-center justify-center aspect-[300/170] w-full overflow-hidden rounded-t-3xl">
                 <img
-                  src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-                  alt="Relume placeholder image 1"
-                  className="w-full object-cover"
+                  src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787689043/roof-repair-clean_viyxzl.avif"
+                  alt="Experst inspecting roof"
+                  className="size-full object-cover"
                 />
               </div>
-              <div className="flex flex-col justify-center p-6">
+              <div className="flex flex-col justify-center p-6 rounded-b-3xl bg-falcon-cream shadow-large">
                 <div>
                   <p className="mb-2 text-sm font-semibold">Inspect</p>
                   <h3 className="mb-2 text-xl font-bold md:text-2xl">
@@ -49,21 +50,22 @@ export function Layout375() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col border border-border-primary">
-              <div className="flex items-center justify-center">
+            {/* Card 2 */}
+            <div className="flex flex-col">
+              <div className="flex items-center justify-center aspect-[300/170] w-full overflow-hidden rounded-t-3xl">
                 <img
-                  src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-                  alt="Relume placeholder image 2"
-                  className="w-full object-cover"
+                  src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787689045/still-3-clean_hwsymw.avif"
+                  alt="New roof installation"
+                  className="size-full object-cover"
                 />
               </div>
-              <div className="flex flex-col justify-center p-6">
+              <div className="flex flex-col justify-center p-6 rounded-b-3xl bg-falcon-cream shadow-large">
                 <div>
-                  <p className="mb-2 text-sm font-semibold">Inspect</p>
+                  <p className="mb-2 text-sm font-semibold">Install</p>
                   <h3 className="mb-2 text-xl font-bold md:text-2xl">
-                    Roof inspection
+                    Roof installation
                   </h3>
-                  <p>We find the small problems before they become big ones.</p>
+                  <p>New roofs built to handle Gauteng weather.</p>
                 </div>
                 <div className="mt-5 flex items-center gap-4 md:mt-6">
                   <Button
@@ -77,21 +79,22 @@ export function Layout375() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col border border-border-primary">
-              <div className="flex items-center justify-center">
+            {/* Card 3 */}
+            <div className="flex flex-col">
+              <div className="flex items-center justify-center aspect-[300/170] w-full overflow-hidden rounded-t-3xl">
                 <img
-                  src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-                  alt="Relume placeholder image 3"
-                  className="w-full object-cover"
+                  src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787778293/roof-repair_shxdeo.avif"
+                  alt="Repaired zinc roof"
+                  className="size-full object-cover"
                 />
               </div>
-              <div className="flex flex-col justify-center p-6">
+              <div className="flex flex-col justify-center p-6 rounded-b-3xl bg-falcon-cream shadow-large">
                 <div>
-                  <p className="mb-2 text-sm font-semibold">Inspect</p>
+                  <p className="mb-2 text-sm font-semibold">Repair</p>
                   <h3 className="mb-2 text-xl font-bold md:text-2xl">
-                    Roof inspection
+                    Roof repair
                   </h3>
-                  <p>We find the small problems before they become big ones.</p>
+                  <p>Leaks fixed, sheets replaced, structure made sound again.</p>
                 </div>
                 <div className="mt-5 flex items-center gap-4 md:mt-6">
                   <Button
@@ -105,21 +108,22 @@ export function Layout375() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col border border-border-primary">
-              <div className="flex items-center justify-center">
+            {/* Card 4 */}
+            <div className="flex flex-col">
+              <div className="flex items-center justify-center aspect-[300/170] w-full overflow-hidden rounded-t-3xl">
                 <img
-                  src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-                  alt="Relume placeholder image 4"
-                  className="w-full object-cover"
+                  src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787689050/roof-damage-repair-clean_vk2shm.avif"
+                  alt="Roof being restored after damage"
+                  className="size-full object-cover"
                 />
               </div>
-              <div className="flex flex-col justify-center p-6">
+              <div className="flex flex-col justify-center p-6 rounded-b-3xl bg-falcon-cream shadow-large">
                 <div>
-                  <p className="mb-2 text-sm font-semibold">Inspect</p>
+                  <p className="mb-2 text-sm font-semibold">Restore</p>
                   <h3 className="mb-2 text-xl font-bold md:text-2xl">
-                    Roof inspection
+                    Roof damage repair
                   </h3>
-                  <p>We find the small problems before they become big ones.</p>
+                  <p>Storm damage and hail damage repaired fast.</p>
                 </div>
                 <div className="mt-5 flex items-center gap-4 md:mt-6">
                   <Button
@@ -133,15 +137,16 @@ export function Layout375() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col border border-border-primary sm:col-span-2 sm:col-start-1 sm:row-span-2 sm:row-start-3 lg:col-span-2 lg:col-start-3 lg:row-span-2 lg:row-start-1">
-              <div className="flex items-center justify-center">
+            {/* Card 5 */}
+            <div className="flex flex-col sm:col-span-2 sm:col-start-1 sm:row-span-2 sm:row-start-3 lg:col-span-2 lg:col-start-3 lg:row-span-2 lg:row-start-1">
+              <div className="flex items-center justify-center aspect-[610/360] w-full overflow-hidden rounded-t-3xl">
                 <img
-                  src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-                  alt="Relume placeholder image 5"
-                  className="w-full object-cover"
+                  src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787776381/ceiling-2_fgs3ud.avif"
+                  alt="Ceiling"
+                  className="size-full object-cover"
                 />
               </div>
-              <div className="flex flex-1 flex-col justify-center p-6 md:p-8 lg:p-12">
+              <div className="flex flex-1 flex-col justify-center p-6 md:p-8 lg:p-12 rounded-b-3xl bg-falcon-cream shadow-large">
                 <div>
                   <p className="mb-2 text-sm font-semibold">Finish</p>
                   <h3 className="mb-5 text-4xl font-bold leading-[1.2] md:mb-6 md:text-5xl lg:text-6xl">
@@ -154,7 +159,7 @@ export function Layout375() {
                   </p>
                 </div>
                 <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
-                  <Button title="All services" variant="secondary">
+                  <Button className="button-falcon-secondary bg-falcon-ink-5 border-border-ink-5" title="All services" variant="secondary">
                     All services
                   </Button>
                   <Button

@@ -26,7 +26,7 @@ export function Layout401() {
           </div>
         </div>
         <div className="grid auto-cols-fr grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8 lg:grid-cols-4">
-          <div className="flex flex-col justify-center bg-falcon-cream rounded-3xl p-6">
+          <div className="flex flex-col justify-center bg-falcon-cream rounded-3xl p-6 shadow-large">
             <div className="mb-3 md:mb-4">
               <img
                 src={requestIcon}
@@ -51,7 +51,7 @@ export function Layout401() {
               </Button>
             </div>
           </div>
-          <div className="flex flex-col justify-center bg-falcon-cream rounded-3xl p-6">
+          <div className="flex flex-col justify-center bg-falcon-cream rounded-3xl p-6 shadow-large">
             <div className="mb-3 md:mb-4">
               <img
                 src={propertyIcon}
@@ -76,7 +76,7 @@ export function Layout401() {
               </Button>
             </div>
           </div>
-          <div className="flex flex-col justify-center bg-falcon-cream rounded-3xl roun p-6">
+          <div className="flex flex-col justify-center bg-falcon-cream rounded-3xl roun p-6 shadow-large">
             <div className="mb-3 md:mb-4">
               <img
                 src={receiveIcon}
@@ -101,7 +101,7 @@ export function Layout401() {
               </Button>
             </div>
           </div>
-          <div className="flex flex-col justify-center bg-falcon-cream rounded-3xl p-6">
+          <div className="flex flex-col justify-center bg-falcon-cream rounded-3xl p-6 shadow-large">
             <div className="mb-3 md:mb-4">
               <img
                 src={constructionIcon}

@@ -66,14 +66,14 @@ export function Layout504() {
             className="data-[state=active]:animate-tabs"
           >
             <div className="grid grid-cols-1 border-none md:grid-cols-2 md:items-stretch">
-              <div className="aspect-square w-full overflow-hidden rounded-t-3xl sm:max-md:aspect-[615/345] md:h-full md:aspect-auto md:rounded-l-3xl md:rounded-r-none">
+              <div className="aspect-square w-full overflow-hidden rounded-t-3xl sm:max-md:aspect-[615/345] md:h-full md:aspect-auto md:rounded-l-3xl md:rounded-r-none shadow-large">
                 <img
                   src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787689054/roof-1-clean_n5euhk.avif"
                   className="size-full object-cover"
                   alt="Relume placeholder image 1"
                 />
               </div>
-              <div className="aspect-square place-content-center rounded-b-3xl bg-falcon-cream sm:max-md:aspect-[615/345] md:h-full md:aspect-auto md:rounded-r-3xl md:rounded-l-none">
+              <div className="aspect-square place-content-center rounded-b-3xl bg-falcon-cream sm:max-md:aspect-[615/345] md:h-full md:aspect-auto md:rounded-r-3xl md:rounded-l-none shadow-large">
                 <div className="p-6 md:p-8 lg:p-12">
                   <p className="mb-3 text-sm font-semibold md:mb-4 md:text-base">Workmanship</p>
                   <h2 className="mb-5 text-3xl font-bold leading-tight sm:text-4xl md:mb-6 md:text-5xl lg:text-6xl">
@@ -106,14 +106,14 @@ export function Layout504() {
             className="data-[state=active]:animate-tabs"
           >
             <div className="grid grid-cols-1 border-none md:grid-cols-2 md:items-stretch">
-              <div className="aspect-square w-full overflow-hidden rounded-t-3xl sm:max-md:aspect-[615/345] md:h-full md:aspect-auto md:rounded-l-3xl md:rounded-r-none">
+              <div className="aspect-square w-full overflow-hidden rounded-t-3xl sm:max-md:aspect-[615/345] md:h-full md:aspect-auto md:rounded-l-3xl md:rounded-r-none shadow-large">
                 <img
                   src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787689061/solar-pannels-clean_oalxnk.avif"
                   className="size-full object-cover"
                   alt="Relume placeholder image 2"
                 />
               </div>
-              <div className="aspect-square place-content-center rounded-b-3xl bg-falcon-cream sm:max-md:aspect-[615/345] md:h-full md:aspect-auto md:rounded-r-3xl md:rounded-l-none">
+              <div className="aspect-square place-content-center rounded-b-3xl bg-falcon-cream sm:max-md:aspect-[615/345] md:h-full md:aspect-auto md:rounded-r-3xl md:rounded-l-none shadow-large">
                 <div className="p-6 md:p-8 lg:p-12">
                   <p className="mb-3 text-sm font-semibold md:mb-4 md:text-base">Reliability</p>
                   <h2 className="mb-5 text-3xl font-bold leading-tight sm:text-4xl md:mb-6 md:text-5xl lg:text-6xl">
@@ -145,14 +145,14 @@ export function Layout504() {
             className="data-[state=active]:animate-tabs"
           >
             <div className="grid grid-cols-1 border-none md:grid-cols-2 md:items-stretch">
-              <div className="aspect-square w-full overflow-hidden rounded-t-3xl sm:max-md:aspect-[615/345] md:h-full md:aspect-auto md:rounded-l-3xl md:rounded-r-none">
+              <div className="aspect-square w-full overflow-hidden rounded-t-3xl sm:max-md:aspect-[615/345] md:h-full md:aspect-auto md:rounded-l-3xl md:rounded-r-none shadow-large">
                 <img
                   src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787690790/support-beams_hvkywj.avif"
                   className="size-full object-cover"
                   alt="Relume placeholder image 3"
                 />
               </div>
-              <div className="aspect-square place-content-center rounded-b-3xl bg-falcon-cream sm:max-md:aspect-[615/345] md:h-full md:aspect-auto md:rounded-r-3xl md:rounded-l-none">
+              <div className="aspect-square place-content-center rounded-b-3xl bg-falcon-cream sm:max-md:aspect-[615/345] md:h-full md:aspect-auto md:rounded-r-3xl md:rounded-l-none shadow-large">
                 <div className="p-6 md:p-8 lg:p-12">
                   <p className="mb-3 text-sm font-semibold md:mb-4 md:text-base">Experience</p>
                   <h2 className="mb-5 text-3xl font-bold leading-tight sm:text-4xl md:mb-6 md:text-5xl lg:text-6xl">
