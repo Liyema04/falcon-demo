@@ -6,7 +6,7 @@ import { RxChevronRight } from "react-icons/rx";
 
 export function Portfolio8() {
   return (
-    <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
+    <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28 bg-background-secondary">
       <div className="container">
         <div className="mx-auto mb-12 max-w-lg text-center md:mb-18 lg:mb-20">
           <p className="mb-3 font-semibold md:mb-4">Projects</p>
@@ -18,17 +18,17 @@ export function Portfolio8() {
           </p>
         </div>
         <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 md:gap-y-16 lg:gap-x-12">
-          <article className="border border-border-primary">
-            <div>
-              <a href="#">
+          <article className="border-none">
+            <div className="aspect-[615/345] w-full overflow-hidden rounded-t-3xl">
+              <a href="#" className="block size-full">
                 <img
-                  src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-                  className="w-full object-cover"
-                  alt="Relume placeholder image"
+                  src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787689058/roof-replace-clean_yxyxks.avif"
+                  className="size-full object-cover"
+                  alt="Centurion Roof Replacement"
                 />
               </a>
             </div>
-            <div className="px-5 py-6 sm:px-6">
+            <div className="px-5 py-6 sm:px-6 rounded-b-3xl bg-falcon-cream">
               <h3 className="mb-2 text-xl font-bold md:text-2xl">
                 <a href="#">Centurion roof replacement</a>
               </h3>
@@ -40,7 +40,7 @@ export function Portfolio8() {
                 <li className="flex">
                   <a
                     href="#"
-                    className="bg-background-secondary px-2 py-1 text-sm font-semibold"
+                    className="bg-background-secondary px-2 py-1 text-sm font-semibold rounded-md"
                   >
                     Roofing
                   </a>
@@ -48,7 +48,7 @@ export function Portfolio8() {
                 <li className="flex">
                   <a
                     href="#"
-                    className="bg-background-secondary px-2 py-1 text-sm font-semibold"
+                    className="bg-background-secondary px-2 py-1 text-sm font-semibold rounded-md"
                   >
                     Centurion
                   </a>
@@ -56,7 +56,7 @@ export function Portfolio8() {
                 <li className="flex">
                   <a
                     href="#"
-                    className="bg-background-secondary px-2 py-1 text-sm font-semibold"
+                    className="bg-background-secondary px-2 py-1 text-sm font-semibold rounded-md"
                   >
                     Residential
                   </a>
@@ -73,42 +73,34 @@ export function Portfolio8() {
               </Button>
             </div>
           </article>
-          <article className="border border-border-primary">
-            <div>
-              <a href="#">
+          <article className="border-none">
+            <div className="aspect-[615/345] w-full overflow-hidden rounded-t-3xl"> 
+              <a href="#" className="block size-full">
                 <img
-                  src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-                  className="w-full object-cover"
-                  alt="Relume placeholder image"
+                  src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787698663/midstream-cleam_txjcqo.avif"
+                  className="size-full object-cover"
+                  alt="Worker fixing zinc panels"
                 />
               </a>
             </div>
-            <div className="px-5 py-6 sm:px-6">
+            <div className="px-5 py-6 sm:px-6 rounded-b-3xl bg-falcon-cream">
               <h3 className="mb-2 text-xl font-bold md:text-2xl">
                 <a href="#">Roof repair services</a>
               </h3>
-              <p>Repairing roofing systems in the Midstream area.</p>
+              <p>Team member access roof to inspect and identify areas requiring repair.</p>
               <ul className="mt-3 flex flex-wrap gap-2 md:mt-4">
                 <li className="flex">
                   <a
                     href="#"
-                    className="bg-background-secondary px-2 py-1 text-sm font-semibold"
+                    className="bg-background-secondary px-2 py-1 text-sm font-semibold rounded-md"
                   >
-                    Roofing
+                    Repair
                   </a>
                 </li>
                 <li className="flex">
                   <a
                     href="#"
-                    className="bg-background-secondary px-2 py-1 text-sm font-semibold"
-                  >
-                    Recent work
-                  </a>
-                </li>
-                <li className="flex">
-                  <a
-                    href="#"
-                    className="bg-background-secondary px-2 py-1 text-sm font-semibold"
+                    className="bg-background-secondary px-2 py-1 text-sm font-semibold rounded-md"
                   >
                     Midstream
                   </a>
@@ -116,9 +108,9 @@ export function Portfolio8() {
                 <li className="flex">
                   <a
                     href="#"
-                    className="bg-background-secondary px-2 py-1 text-sm font-semibold"
+                    className="bg-background-secondary px-2 py-1 text-sm font-semibold rounded-md"
                   >
-                    Repair
+                    Recent work
                   </a>
                 </li>
               </ul>
@@ -135,7 +127,7 @@ export function Portfolio8() {
           </article>
         </div>
         <div className="mt-12 flex justify-center md:mt-18 lg:mt-20">
-          <Button title="View all" variant="secondary" size="primary">
+          <Button className="button-falcon-secondary bg-falcon-ink-5 border-none" title="View all" variant="secondary" size="primary">
             View all
           </Button>
         </div>

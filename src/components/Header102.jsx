@@ -99,7 +99,7 @@ export function Header102() {
                       alt="Complete roof"
                     />
                   </div>
-                  <div className="relative bg-background-secondary px-6 pb-32 pt-6 sm:px-8 sm:pt-8">
+                  <div className="relative bg-falcon-cream px-6 pb-32 pt-6 sm:px-8 sm:pt-8">
                     <div className="w-full max-w-lg">
                       <h6 className="mb-1 text-md font-bold leading-[1.4] md:text-xl">
                         Professional Installations
@@ -123,7 +123,7 @@ export function Header102() {
                       alt="Construction workers inspecting roof"
                     />
                   </div>
-                  <div className="relative bg-background-secondary px-6 pb-32 pt-6 sm:px-8 sm:pt-8">
+                  <div className="relative bg-falcon-cream px-6 pb-32 pt-6 sm:px-8 sm:pt-8">
                     <div className="w-full max-w-lg">
                       <h6 className="mb-1 text-md font-bold leading-[1.4] md:text-xl">
                         Thorough Inspections
@@ -147,7 +147,7 @@ export function Header102() {
                       alt="Construction worker repairing roof"
                     />
                   </div>
-                  <div className="relative bg-background-secondary px-6 pb-32 pt-6 sm:px-8 sm:pt-8">
+                  <div className="relative bg-falcon-cream px-6 pb-32 pt-6 sm:px-8 sm:pt-8">
                     <div className="w-full max-w-lg">
                       <h6 className="mb-1 text-md font-bold leading-[1.4] md:text-xl">
                         Efficient Repairs
