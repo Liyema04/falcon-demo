@@ -2,6 +2,7 @@
 
 import { Button, Input } from "@relume_io/relume-ui";
 import React, { useState } from "react";
+import { BiBell } from "react-icons/bi";
 
 const useForm = () => {
   const [email, setEmail] = useState("");
@@ -22,7 +23,7 @@ const useForm = () => {
 export function Footer6() {
   const formState = useForm();
   return (
-    <footer id="relume" className="px-[5%] py-12 md:py-18 lg:py-20">
+    <footer id="relume" className="px-[5%] py-12 md:py-18 lg:py-20 bg-background-secondary">
       <div className="container">
         <div className="lg:flex lg:items-start lg:justify-between">
           <div className="rb-6 mb-6 lg:mb-0">
@@ -35,13 +36,20 @@ export function Footer6() {
               onSubmit={formState.handleSubmit}
             >
               <Input
+                className="h-12 rounded-falcon-control border-falcon-ink/20 bg-falcon-white px-4 shadow-none transition-colors placeholder:text-falcon-ink/45 focus-visible:border-falcon-totem-pole focus-visible:ring-2 focus-visible:ring-falcon-totem-pole/15"
                 id="email"
                 type="email"
                 placeholder="Enter your email"
                 value={formState.email}
                 onChange={formState.handleSetEmail}
               />
-              <Button title="Subscribe" variant="secondary" size="sm">
+              <Button
+                className="group button-falcon-subscribe"
+                title="Subscribe"
+                variant="secondary"
+                size="sm"
+                iconLeft={<BiBell className="size-5 transition-transform duration-300 ease-in-out group-hover:rotate-[20deg] group-hover:scale-110" />}
+              >
                 Subscribe
               </Button>
             </form>
@@ -85,7 +93,7 @@ export function Footer6() {
             </ul>
           </div>
           <div className="flex flex-col items-start justify-start">
-            <h2 className="mb-2 font-semibold">Company</h2>
+            <h2 className="mb-2 font-semibold">The Falcon Experience</h2>
             <ul>
               <li className="py-2 text-sm">
                 <a href="#" className="flex items-center gap-3">
@@ -94,7 +102,7 @@ export function Footer6() {
               </li>
               <li className="py-2 text-sm">
                 <a href="#" className="flex items-center gap-3">
-                  Portfolio
+                  Projects
                 </a>
               </li>
               <li className="py-2 text-sm">
@@ -104,12 +112,7 @@ export function Footer6() {
               </li>
               <li className="py-2 text-sm">
                 <a href="#" className="flex items-center gap-3">
-                  Why choose us
-                </a>
-              </li>
-              <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
-                  Contact
+                  Why Falcon
                 </a>
               </li>
             </ul>
@@ -129,39 +132,14 @@ export function Footer6() {
               </li>
               <li className="py-2 text-sm">
                 <a href="#" className="flex items-center gap-3">
-                  Link Thirteen
-                </a>
-              </li>
-              <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
-                  Rustenburg
-                </a>
-              </li>
-              <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
-                  Get in touch
-                </a>
-              </li>
-              <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
-                  Request a quote
+                  Other
                 </a>
               </li>
             </ul>
           </div>
           <div className="flex flex-col items-start justify-start">
-            <h2 className="mb-2 font-semibold">WhatsApp us</h2>
+            <h2 className="mb-2 font-semibold">Follow us</h2>
             <ul>
-              <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
-                  Call us
-                </a>
-              </li>
-              <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
-                  Follow us
-                </a>
-              </li>
               <li className="py-2 text-sm">
                 <a href="#" className="flex items-center gap-3">
                   Facebook
@@ -199,17 +177,17 @@ export function Footer6() {
             <ul>
               <li className="py-2 text-sm">
                 <a href="#" className="flex items-center gap-3">
-                  WhatsApp us
-                </a>
-              </li>
-              <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
-                  Email us
-                </a>
-              </li>
-              <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
                   Get a quote
+                </a>
+              </li>
+              <li className="py-2 text-sm">
+                <a href="#" className="flex items-center gap-3">
+                  Chat on WhatsApp
+                </a>
+              </li>
+              <li className="py-2 text-sm">
+                <a href="#" className="flex items-center gap-3">
+                  Talk to Our Team
                 </a>
               </li>
             </ul>
@@ -219,11 +197,12 @@ export function Footer6() {
         <div className="flex flex-col items-start pb-4 pt-6 text-sm sm:flex-row sm:items-center sm:justify-between md:pb-0 md:pt-8">
           <a href="#" className="mb-6 sm:mb-0">
             <img
-              src="https://d22po4pjz3o32e.cloudfront.net/logo-image.svg"
+              src="/src/assets/Falcon-roofing-logo.png"
+              width="65px"
               alt="Logo image"
             />
           </a>
-          <p className="text-sm">© 2024 Relume. All rights reserved.</p>
+          <p className="text-sm">© 2026 Falcon Roofing. Website by Zenco Web Solutions. All rights reserved.</p>
         </div>
       </div>
     </footer>

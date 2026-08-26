@@ -23,6 +23,19 @@
     @apply inline-flex items-center justify-center gap-2 rounded-falcon-button border border-transparent bg-falcon-transparent bg-[length:180%_180%] bg-[position:0%_50%] px-6 py-2.5 font-sans text-falcon-body font-medium text-falcon-ink shadow-[0_4px_12px_rgba(8,1,1,0.04)] transition-[box-shadow,background-color,background-position,transform] duration-300 ease-in-out hover:border-2 hover:border-falcon-cream hover:bg-[linear-gradient(133deg,rgba(160,11,13,0.08),rgba(2,4,3,0.08))] hover:bg-[position:100%_50%] hover:shadow-[0_7px_16px_rgba(160,11,13,0.12)] active:translate-y-px focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-falcon-totem-pole disabled:pointer-events-none disabled:opacity-50 motion-reduce:transition-none;
   }
 
+  .button-falcon-subscribe.button-falcon-subscribe {
+    @apply relative isolate inline-flex h-12 items-center justify-center gap-3 overflow-hidden rounded-falcon-control border-2 border-[#9A6508] bg-transparent px-6 font-sans text-sm font-bold uppercase tracking-[0.12em] text-[#9A6508] transition-[color,transform,box-shadow] duration-300 ease-in-out before:absolute before:inset-0 before:-z-10 before:origin-left before:scale-x-0 before:bg-[#9A6508] before:transition-transform before:duration-500 hover:text-falcon-white hover:before:scale-x-100 active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#77980D] disabled:pointer-events-none disabled:opacity-50 motion-reduce:transform-none motion-reduce:transition-none motion-reduce:before:transition-none;
+    box-shadow: none;
+  }
+
+  .button-falcon-subscribe.button-falcon-subscribe::before {
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .button-falcon-subscribe.button-falcon-subscribe:hover {
+    box-shadow: 0 8px 20px rgb(154, 101, 8, 0.4);
+  }
+
   .button-falcon-control {
     @apply inline-flex size-12 items-center justify-center rounded-falcon-control border border-falcon-white bg-falcon-surface text-falcon-ink transition-colors hover:bg-falcon-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-falcon-totem-pole disabled:pointer-events-none disabled:opacity-50;
   }

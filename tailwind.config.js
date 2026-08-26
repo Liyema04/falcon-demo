@@ -46,6 +46,7 @@ export default {
           "ink-5": "#0801010d",
           transparent: "#ffffff00",
           cream: "#eae0cd",
+          harvest:"#9A6508",
         },
       },
       fontFamily: {
