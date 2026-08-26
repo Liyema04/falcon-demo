@@ -438,7 +438,7 @@ export function Navbar5() {
           </motion.div>
         </div>
         <div className="hidden lg:flex lg:gap-4">
-          <Button className="button-falcon-secondary bg-falcon-ink-5 border-none" title="Call" variant="secondary" size="sm">
+          <Button className="button-falcon-secondary bg-falcon-ink-5 border-border-ink-5" title="Call" variant="secondary" size="sm">
             Call
           </Button>
           <Button className="button-falcon-primary" title="Quote" size="sm">

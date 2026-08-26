@@ -39,8 +39,8 @@ export default {
         },
         falcon: {
           ink: "#080101",
-          "racing-black": "#020403",
-          "totem-pole": "#a00b0d",
+          "racing-black": "#020403", // Black
+          "totem-pole": "#a00b0d", // Red
           surface: "#f2f2f2",
           white: "#ffffff",
           "ink-5": "#0801010d",

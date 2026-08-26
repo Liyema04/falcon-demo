@@ -127,7 +127,7 @@ export function Portfolio8() {
           </article>
         </div>
         <div className="mt-12 flex justify-center md:mt-18 lg:mt-20">
-          <Button className="button-falcon-secondary bg-falcon-ink-5 border-none" title="View all" variant="secondary" size="primary">
+          <Button className="button-falcon-secondary bg-falcon-ink-5 border-border-ink-5" title="View all" variant="secondary" size="primary">
             View all
           </Button>
         </div>
