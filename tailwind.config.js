@@ -47,6 +47,7 @@ export default {
           transparent: "#ffffff00",
           cream: "#eae0cd",
           harvest:"#9A6508",
+          pampas: "#f0ebe8",
         },
       },
       fontFamily: {

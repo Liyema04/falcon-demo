@@ -51,7 +51,7 @@ export function Navbar5() {
   return (
     <section
       id="relume"
-      className="relative flex w-full items-center justify-between bg-background-secondary shadow-xl lg:min-h-18 lg:px-[5%]"
+      className="relative z-50 flex w-full items-center justify-between bg-background-secondary shadow-xl lg:min-h-18 lg:px-[5%]"
     >
       <div className="size-full lg:flex lg:items-center lg:justify-between">
         <div className="lg:flex">
@@ -118,19 +118,19 @@ export function Navbar5() {
             className="overflow-auto px-[5%] lg:ml-6 lg:flex lg:items-center lg:px-0 lg:[--height-closed:auto] lg:[--height-open:auto]"
           >
             <a
-              href="#"
+              href="/"
               className="block py-3 text-md first:pt-7 lg:px-4 lg:py-6 lg:text-base first:lg:pt-6"
             >
               Home
             </a>
             <a
-              href="#"
+              href="/about"
               className="block py-3 text-md first:pt-7 lg:px-4 lg:py-6 lg:text-base first:lg:pt-6"
             >
               About
             </a>
             <a
-              href="#"
+              href="/projects"
               className="block py-3 text-md first:pt-7 lg:px-4 lg:py-6 lg:text-base first:lg:pt-6"
             >
               Projects
@@ -352,9 +352,9 @@ export function Navbar5() {
                           >
                             <div className="relative w-full pt-[66.66%]">
                               <img
-                                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-                                alt="Relume placeholder image 1"
-                                className="absolute inset-0 size-full object-cover"
+                                src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787689050/roof-damage-repair-clean_vk2shm.avif"
+                                alt="Worker repairing roof"
+                                className="absolute inset-0 size-full object-cover rounded-2xl"
                               />
                             </div>
                             <div className="rt-4 mt-4 flex flex-col justify-start md:mt-0">
@@ -380,9 +380,9 @@ export function Navbar5() {
                           >
                             <div className="relative w-full pt-[66.66%]">
                               <img
-                                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-                                alt="Relume placeholder image 2"
-                                className="absolute inset-0 size-full object-cover"
+                                src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787689054/roof-1-clean_n5euhk.avif"
+                                alt="Picture of workers on roof in latest intallation"
+                                className="absolute inset-0 size-full object-cover rounded-2xl"
                               />
                             </div>
                             <div className="rt-4 mt-4 flex flex-col justify-start md:mt-0">
@@ -424,25 +424,25 @@ export function Navbar5() {
             </div>
             <div className="mt-6 flex w-full flex-col gap-y-4 pb-24 lg:hidden lg:pb-0">
               <Button
-                className="w-full"
+                className="w-full button-falcon-secondary bg-falcon-ink-5 border-border-ink-5"
                 title="Button"
                 variant="secondary"
                 size="sm"
               >
-                Button
+                Let's Talk 
               </Button>
-              <Button className="w-full" title="Button" size="sm">
-                Button
+              <Button className="w-full button-falcon-primary" title="Button" size="sm">
+                Get a Quote
               </Button>
             </div>
           </motion.div>
         </div>
         <div className="hidden lg:flex lg:gap-4">
           <Button className="button-falcon-secondary bg-falcon-ink-5 border-border-ink-5" title="Call" variant="secondary" size="sm">
-            Call
+            Let's Talk
           </Button>
           <Button className="button-falcon-primary" title="Quote" size="sm">
-            Quote
+            Get a Quote
           </Button>
         </div>
       </div>
