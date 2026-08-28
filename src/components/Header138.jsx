@@ -2,6 +2,7 @@
 
 import { Button } from "@relume_io/relume-ui";
 import React from "react";
+import { Link } from "react-router-dom";
 
 export function Header138() {
   return (
@@ -35,11 +36,12 @@ export function Header138() {
               </div>
               <div>
                 <p className="text-base text-text-primary md:text-md">
-                  Site under construction. We're currently working on something
-                  new. Please check back soon.
+                  Site under construction, we're currently working on something new. Please check back soon.
                 </p>
                 <div className="mt-6 flex gap-x-4 md:mt-8">
-                  <Button className="button-falcon-primary" title="Back to Home">Back to Home</Button>
+                  <Button asChild className="button-falcon-primary" title="Back to Home">
+                    <Link to="/">Back to Home</Link>
+                  </Button>
                   <Button className="button-falcon-secondary bg-falcon-ink-5 border-border-ink-5" title="Contact Us" variant="secondary">
                     Contact Us
                   </Button>

@@ -3,6 +3,7 @@
 import { Button, useMediaQuery } from "@relume_io/relume-ui";
 import { motion, px } from "framer-motion";
 import React, { useState } from "react";
+import { BiNotepad, BiPhoneCall } from "react-icons/bi";
 import { RxChevronDown, RxChevronRight } from "react-icons/rx";
 
 // Service Drop down Icons:
@@ -438,10 +439,10 @@ export function Navbar5() {
           </motion.div>
         </div>
         <div className="hidden lg:flex lg:gap-4">
-          <Button className="button-falcon-secondary bg-falcon-ink-5 border-border-ink-5" title="Call" variant="secondary" size="sm">
+          <Button className="button-falcon-secondary bg-falcon-ink-5 border-border-ink-5" title="Call" variant="secondary" size="sm" iconLeft={<BiPhoneCall className="size-4" />}>
             Let's Talk
           </Button>
-          <Button className="button-falcon-primary" title="Quote" size="sm">
+          <Button className="button-falcon-primary" title="Quote" size="sm" iconLeft={<BiNotepad className="size-4" />}>
             Get a Quote
           </Button>
         </div>

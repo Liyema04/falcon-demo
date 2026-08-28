@@ -10,6 +10,7 @@ import {
 } from "@relume_io/relume-ui";
 import Autoplay from "embla-carousel-autoplay";
 import React, { useEffect, useState } from "react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const useCarousel = () => {
   const [api, setApi] = useState();
@@ -75,8 +76,14 @@ export function Header102() {
         </p>
         <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
           <Button className="button-falcon-primary" title="Request a quote">Request a quote</Button>
-          <Button className="button-falcon-secondary bg-falcon-ink-5 border-none" title="WhatsApp us" variant="secondary">
-            WhatsApp us
+          <Button
+            className="group button-falcon-whatsapp"
+            title="WhatsApp us"
+            variant="secondary"
+            size="sm"
+            iconLeft={<FaWhatsapp className="size-5 transition-transform duration-300 ease-in-out group-hover:scale-110" />}
+          >
+            Chat on WhatsApp
           </Button>
         </div>
       </div>
