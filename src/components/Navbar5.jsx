@@ -179,7 +179,7 @@ export function Navbar5() {
                   <div className="w-full lg:flex">
                     <div className="grid flex-1 gap-x-8 gap-y-6 py-4 pr-8 md:grid-cols-2 md:px-0 md:py-8 lg:py-8 lg:pr-8">
                       <div className="grid auto-rows-max grid-cols-1 grid-rows-[max-content] gap-y-2 md:gap-y-4">
-                        <h4 className="text-sm font-semibold leading-[1.3]">
+                        <h4 className="text-sm font-semibold uppercase tracking-[0.16em] text-falcon-totem-pole leading-[1.3]">
                           Roofing services
                         </h4>
                         <a
@@ -260,7 +260,7 @@ export function Navbar5() {
                         </a>
                       </div>
                       <div className="grid auto-rows-max grid-cols-1 grid-rows-[max-content] gap-y-2 md:gap-y-4">
-                        <h4 className="text-sm font-semibold leading-[1.3]">
+                        <h4 className="text-sm font-semibold uppercase tracking-[0.16em] text-falcon-totem-pole leading-[1.3]">
                           Company
                         </h4>
                         <a
@@ -343,7 +343,7 @@ export function Navbar5() {
                     </div>
                     <div className="max-w-none relative flex flex-1 p-6 md:py-8 md:pl-8 md:pr-0 lg:max-w-md">
                       <div className="relative z-10 grid w-full auto-cols-fr auto-rows-max grid-cols-1 grid-rows-[max-content_max-content] gap-4">
-                        <h4 className="text-sm font-semibold leading-[1.3]">
+                        <h4 className="text-sm font-semibold uppercase tracking-[0.16em] text-falcon-totem-pole leading-[1.3]">
                           Previous work
                         </h4>
                         <div className="grid auto-cols-fr grid-cols-1 grid-rows-[auto_auto] items-start gap-y-2 lg:grid-rows-[auto]">
@@ -368,7 +368,7 @@ export function Navbar5() {
                                   title="Read more"
                                   variant="link"
                                   size="link"
-                                  className="text-sm underline"
+                                  className="text-sm font-semibold text-falcon-harvest underline"
                                 >
                                   Read more
                                 </Button>
@@ -398,7 +398,7 @@ export function Navbar5() {
                                   title="Read more"
                                   variant="link"
                                   size="link"
-                                  className="text-sm underline"
+                                  className="text-sm font-semibold text-falcon-harvest underline"
                                 >
                                   Read more
                                 </Button>
@@ -408,6 +408,7 @@ export function Navbar5() {
                         </div>
                         <div className="flex items-center">
                           <Button
+                            className="font-semibold text-falcon-totem-pole"
                             title="See all projects"
                             variant="link"
                             size="link"
@@ -425,7 +426,7 @@ export function Navbar5() {
             </div>
             <div className="mt-6 flex w-full flex-col gap-y-4 pb-24 lg:hidden lg:pb-0">
               <Button
-                className="w-full button-falcon-secondary bg-falcon-ink-5 border-border-ink-5"
+                className="w-full button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5"
                 title="Button"
                 variant="secondary"
                 size="sm"
@@ -439,7 +440,7 @@ export function Navbar5() {
           </motion.div>
         </div>
         <div className="hidden lg:flex lg:gap-4">
-          <Button className="button-falcon-secondary bg-falcon-ink-5 border-border-ink-5" title="Call" variant="secondary" size="sm" iconLeft={<BiPhoneCall className="size-4" />}>
+          <Button className="button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="Call" variant="secondary" size="sm" iconLeft={<BiPhoneCall className="size-4" />}>
             Let's Talk
           </Button>
           <Button className="button-falcon-primary" title="Quote" size="sm" iconLeft={<BiNotepad className="size-4" />}>

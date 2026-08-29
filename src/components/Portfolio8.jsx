@@ -9,7 +9,7 @@ export function Portfolio8() {
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28 bg-background-secondary">
       <div className="container">
         <div className="mx-auto mb-12 max-w-lg text-center md:mb-18 lg:mb-20">
-          <p className="mb-3 font-semibold md:mb-4">Projects</p>
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-falcon-totem-pole md:mb-4">Projects</p>
           <h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
             Work that holds
           </h2>
@@ -40,7 +40,7 @@ export function Portfolio8() {
                 <li className="flex">
                   <a
                     href="#"
-                    className="bg-background-secondary px-2 py-1 text-sm font-semibold rounded-md"
+                    className="bg-background-secondary px-2 py-1 text-sm font-semibold text-falcon-harvest rounded-md"
                   >
                     Roofing
                   </a>
@@ -48,7 +48,7 @@ export function Portfolio8() {
                 <li className="flex">
                   <a
                     href="#"
-                    className="bg-background-secondary px-2 py-1 text-sm font-semibold rounded-md"
+                    className="bg-background-secondary px-2 py-1 text-sm font-semibold text-falcon-harvest rounded-md"
                   >
                     Centurion
                   </a>
@@ -56,7 +56,7 @@ export function Portfolio8() {
                 <li className="flex">
                   <a
                     href="#"
-                    className="bg-background-secondary px-2 py-1 text-sm font-semibold rounded-md"
+                    className="bg-background-secondary px-2 py-1 text-sm font-semibold text-falcon-harvest rounded-md"
                   >
                     Residential
                   </a>
@@ -67,7 +67,7 @@ export function Portfolio8() {
                 variant="link"
                 size="link"
                 iconRight={<RxChevronRight />}
-                className="mt-5 md:mt-6"
+                className="mt-5 font-semibold text-gray-600 md:mt-6"
               >
                 <a href="#">View project</a>
               </Button>
@@ -92,7 +92,7 @@ export function Portfolio8() {
                 <li className="flex">
                   <a
                     href="#"
-                    className="bg-background-secondary px-2 py-1 text-sm font-semibold rounded-md"
+                    className="bg-background-secondary px-2 py-1 text-sm font-semibold text-falcon-harvest rounded-md"
                   >
                     Repair
                   </a>
@@ -100,7 +100,7 @@ export function Portfolio8() {
                 <li className="flex">
                   <a
                     href="#"
-                    className="bg-background-secondary px-2 py-1 text-sm font-semibold rounded-md"
+                    className="bg-background-secondary px-2 py-1 text-sm font-semibold text-falcon-harvest rounded-md"
                   >
                     Midstream
                   </a>
@@ -108,7 +108,7 @@ export function Portfolio8() {
                 <li className="flex">
                   <a
                     href="#"
-                    className="bg-background-secondary px-2 py-1 text-sm font-semibold rounded-md"
+                    className="bg-background-secondary px-2 py-1 text-sm font-semibold text-falcon-harvest rounded-md"
                   >
                     Recent work
                   </a>
@@ -119,7 +119,7 @@ export function Portfolio8() {
                 variant="link"
                 size="link"
                 iconRight={<RxChevronRight />}
-                className="mt-5 md:mt-6"
+                className="mt-5 font-semibold text-gray-600 md:mt-6"
               >
                 <a href="#">View project</a>
               </Button>
@@ -127,7 +127,7 @@ export function Portfolio8() {
           </article>
         </div>
         <div className="mt-12 flex justify-center md:mt-18 lg:mt-20">
-          <Button className="button-falcon-secondary bg-falcon-ink-5 border-border-ink-5" title="View all" variant="secondary" size="primary">
+          <Button className="button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="View all" variant="secondary" size="primary">
             View all
           </Button>
         </div>

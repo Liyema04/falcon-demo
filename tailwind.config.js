@@ -48,6 +48,8 @@ export default {
           cream: "#eae0cd",
           harvest:"#9A6508",
           pampas: "#f0ebe8",
+          christi: "#77980d",
+          gray: "#4b5563",
         },
       },
       fontFamily: {

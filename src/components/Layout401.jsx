@@ -16,7 +16,7 @@ export function Layout401() {
       <div className="container">
         <div className="mb-12 md:mb-18 lg:mb-20">
           <div className="mx-auto max-w-lg text-center">
-            <p className="mb-3 font-semibold md:mb-4">Process</p>
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-falcon-totem-pole md:mb-4">Process</p>
             <h1 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
               How it works
             </h1>
@@ -42,6 +42,7 @@ export function Layout401() {
             <p>Send us a message or call. Tell us what you need.</p>
             <div className="mt-5 md:mt-6">
               <Button
+                className="font-semibold text-falcon-harvest"
                 title="Start"
                 variant="link"
                 size="link"
@@ -67,6 +68,7 @@ export function Layout401() {
             <p>We come out, look at the job and take measurements.</p>
             <div className="mt-5 md:mt-6">
               <Button
+                className="font-semibold text-falcon-harvest"
                 title="Next"
                 variant="link"
                 size="link"
@@ -92,6 +94,7 @@ export function Layout401() {
             <p>You get a clear recommendation and an honest price metrics.</p>
             <div className="mt-5 md:mt-6">
               <Button
+                className="font-semibold text-falcon-harvest"
                 title="Next"
                 variant="link"
                 size="link"
@@ -117,6 +120,7 @@ export function Layout401() {
             <p>We arrive, do the job and leave the site clean.</p>
             <div className="mt-5 md:mt-6">
               <Button
+                className="font-semibold text-falcon-harvest"
                 title="Finish"
                 variant="link"
                 size="link"

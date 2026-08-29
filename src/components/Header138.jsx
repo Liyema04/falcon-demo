@@ -42,7 +42,7 @@ export function Header138() {
                   <Button asChild className="button-falcon-primary" title="Back to Home">
                     <Link to="/">Back to Home</Link>
                   </Button>
-                  <Button className="button-falcon-secondary bg-falcon-ink-5 border-border-ink-5" title="Contact Us" variant="secondary">
+                  <Button className="button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="Contact Us" variant="secondary">
                     Contact Us
                   </Button>
                 </div>

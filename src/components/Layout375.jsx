@@ -10,7 +10,7 @@ export function Layout375() {
       <div className="container">
         <div className="rb-12 mb-12 md:mb-18 lg:mb-20">
           <div className="mx-auto max-w-lg text-center">
-            <p className="mb-3 font-semibold md:mb-4">Services</p>
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-falcon-totem-pole md:mb-4">Services</p>
             <h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
               What we do
             </h2>
@@ -32,7 +32,7 @@ export function Layout375() {
               </div>
               <div className="flex flex-col justify-center p-6 rounded-b-3xl bg-falcon-cream shadow-large">
                 <div>
-                  <p className="mb-2 text-sm font-semibold">Inspect</p>
+                  <p className="mb-2 text-sm font-semibold tracking-[0.16em] text-falcon-totem-pole">Inspect</p>
                   <h3 className="mb-2 text-xl font-bold md:text-2xl">
                     Roof inspection
                   </h3>
@@ -40,6 +40,7 @@ export function Layout375() {
                 </div>
                 <div className="mt-5 flex items-center gap-4 md:mt-6">
                   <Button
+                    className="font-semibold text-falcon-harvest"
                     title="More"
                     variant="link"
                     size="link"
@@ -61,7 +62,7 @@ export function Layout375() {
               </div>
               <div className="flex flex-col justify-center p-6 rounded-b-3xl bg-falcon-cream shadow-large">
                 <div>
-                  <p className="mb-2 text-sm font-semibold">Install</p>
+                  <p className="mb-2 text-sm font-semibold tracking-[0.16em] text-falcon-totem-pole">Install</p>
                   <h3 className="mb-2 text-xl font-bold md:text-2xl">
                     Roof installation
                   </h3>
@@ -69,6 +70,7 @@ export function Layout375() {
                 </div>
                 <div className="mt-5 flex items-center gap-4 md:mt-6">
                   <Button
+                    className="font-semibold text-falcon-harvest"
                     title="More"
                     variant="link"
                     size="link"
@@ -90,7 +92,7 @@ export function Layout375() {
               </div>
               <div className="flex flex-col justify-center p-6 rounded-b-3xl bg-falcon-cream shadow-large">
                 <div>
-                  <p className="mb-2 text-sm font-semibold">Repair</p>
+                  <p className="mb-2 text-sm font-semibold tracking-[0.16em] text-falcon-totem-pole">Repair</p>
                   <h3 className="mb-2 text-xl font-bold md:text-2xl">
                     Roof repair
                   </h3>
@@ -98,6 +100,7 @@ export function Layout375() {
                 </div>
                 <div className="mt-5 flex items-center gap-4 md:mt-6">
                   <Button
+                    className="font-semibold text-falcon-harvest"
                     title="More"
                     variant="link"
                     size="link"
@@ -119,7 +122,7 @@ export function Layout375() {
               </div>
               <div className="flex flex-col justify-center p-6 rounded-b-3xl bg-falcon-cream shadow-large">
                 <div>
-                  <p className="mb-2 text-sm font-semibold">Restore</p>
+                  <p className="mb-2 text-sm font-semibold tracking-[0.16em] text-falcon-totem-pole">Restore</p>
                   <h3 className="mb-2 text-xl font-bold md:text-2xl">
                     Roof damage repair
                   </h3>
@@ -127,6 +130,7 @@ export function Layout375() {
                 </div>
                 <div className="mt-5 flex items-center gap-4 md:mt-6">
                   <Button
+                    className="font-semibold text-falcon-harvest"
                     title="More"
                     variant="link"
                     size="link"
@@ -148,7 +152,7 @@ export function Layout375() {
               </div>
               <div className="flex flex-1 flex-col justify-center p-6 md:p-8 lg:p-12 rounded-b-3xl bg-falcon-cream shadow-large">
                 <div>
-                  <p className="mb-2 text-sm font-semibold">Finish</p>
+                  <p className="mb-2 text-sm font-semibold tracking-[0.16em] text-falcon-totem-pole">Finish</p>
                   <h3 className="mb-5 text-4xl font-bold leading-[1.2] md:mb-6 md:text-5xl lg:text-6xl">
                     Ceilings and partitions
                   </h3>
@@ -159,10 +163,11 @@ export function Layout375() {
                   </p>
                 </div>
                 <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
-                  <Button className="button-falcon-secondary bg-falcon-ink-5 border-border-ink-5" title="All services" variant="secondary">
+                  <Button className="button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="All services" variant="secondary">
                     All services
                   </Button>
                   <Button
+                    className="font-semibold text-falcon-harvest"
                     title="Get a quote"
                     variant="link"
                     size="link"
