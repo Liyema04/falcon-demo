@@ -9,58 +9,68 @@ import {
 } from "@relume_io/relume-ui";
 import React from "react";
 import { RxChevronRight } from "react-icons/rx";
+import { TextFade } from "../animations/TextFade";
 
 export function Layout504() {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28 bg-falcon-white">
       <div className="container">
         <div className="mb-12 md:mb-18 lg:mb-20">
+          
           <div className="mx-auto max-w-lg text-center">
-            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-falcon-totem-pole md:mb-4">Why Falcon</p>
-            <h1 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
-              Built on workmanship
-            </h1>
-            <p className="md:text-md">
-              We do not hide behind slogans. We show up, assess the job honestly
-              and do the work properly. That is our promise.
-            </p>
-            <div className="mt-6 flex items-center justify-center gap-x-4 md:mt-8">
-              <Button className="button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="Get a quote" variant="secondary">
-                Get a quote
-              </Button>
-              <Button
-                className="font-semibold text-falcon-harvest"
-                title="Our work"
-                variant="link"
-                size="link"
-                iconRight={<RxChevronRight />}
-              >
-                Our work
-                <hr/>
-              </Button>
-            </div>
+            <TextFade direction="up" staggerChildren={0.2}>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-falcon-totem-pole md:mb-4">Why Falcon</p>
+              <h1 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
+                Built on workmanship
+              </h1>
+              <p className="md:text-md">
+                We do not hide behind slogans. We show up, assess the job honestly
+                and do the work properly. That is our promise.
+              </p>
+              <div className="mt-6 flex items-center justify-center gap-x-4 md:mt-8">
+                <Button className="button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="Get a quote" variant="secondary">
+                  Get a quote
+                </Button>
+                <Button
+                  className="font-semibold text-falcon-harvest"
+                  title="Our work"
+                  variant="link"
+                  size="link"
+                  iconRight={<RxChevronRight />}
+                >
+                  Our work
+                  <hr/>
+                </Button>
+              </div>
+            </TextFade>
           </div>
         </div>
         <Tabs defaultValue="tab-one" className="flex flex-col items-center">
           <TabsList className="no-scrollbar relative mb-12 flex w-screen flex-nowrap items-center gap-x-6 overflow-auto px-[5vw] md:mb-16 md:w-auto md:max-w-full md:px-0">
-            <TabsTrigger
-              value="tab-one"
-              className="border-0 border-b-[1.5px] border-transparent px-0 py-2 duration-0 data-[state=active]:border-border-primary data-[state=active]:bg-transparent data-[state=active]:text-text-primary"
-            >
-              Workmanship
-            </TabsTrigger>
-            <TabsTrigger
-              value="tab-two"
-              className="border-0 border-b-[1.5px] border-transparent px-0 py-2 duration-0 data-[state=active]:border-border-primary data-[state=active]:bg-transparent data-[state=active]:text-text-primary"
-            >
-              Reliability
-            </TabsTrigger>
-            <TabsTrigger
-              value="tab-three"
-              className="border-0 border-b-[1.5px] border-transparent px-0 py-2 duration-0 data-[state=active]:border-border-primary data-[state=active]:bg-transparent data-[state=active]:text-text-primary"
-            >
-              Experience
-            </TabsTrigger>
+            <TextFade direction="up" staggerChildren={0.3} className="items-center">
+              <TabsTrigger
+                value="tab-one"
+                className="border-0 border-b-[1.5px] border-transparent px-0 py-2 duration-0 data-[state=active]:border-border-primary data-[state=active]:bg-transparent data-[state=active]:text-text-primary"
+              >
+                Workmanship
+              </TabsTrigger>
+            </TextFade>
+            <TextFade direction="up" staggerChildren={0.3}>
+              <TabsTrigger
+                value="tab-two"
+                className="border-0 border-b-[1.5px] border-transparent px-0 py-2 duration-0 data-[state=active]:border-border-primary data-[state=active]:bg-transparent data-[state=active]:text-text-primary"
+              >
+                Reliability
+              </TabsTrigger>
+            </TextFade>
+            <TextFade direction="up" staggerChildren={0.3}>
+              <TabsTrigger
+                value="tab-three"
+                className="border-0 border-b-[1.5px] border-transparent px-0 py-2 duration-0 data-[state=active]:border-border-primary data-[state=active]:bg-transparent data-[state=active]:text-text-primary"
+              >
+                Experience
+              </TabsTrigger>
+            </TextFade>
           </TabsList>
           <TabsContent
             value="tab-one"

@@ -3,6 +3,8 @@
 import { Button } from "@relume_io/relume-ui";
 import React from "react";
 import { Link } from "react-router-dom";
+import { StaggeredFade } from "../animations/StaggeredFade";
+import { TextFade } from "../animations/TextFade";
 
 export function Header138() {
   return (
@@ -30,22 +32,25 @@ export function Header138() {
           <div className="py-12 md:py-18 lg:py-20">
             <div className="auto-cols-1fr mt-[5%] grid grid-cols-1 items-start gap-5 md:grid-cols-2 md:gap-x-12 md:gap-y-8 lg:gap-x-20 lg:gap-y-16">
               <div>
-                <h1 className="text-6xl font-bold text-text-primary md:text-9xl lg:text-10xl">
-                  Coming soon...
-                </h1>
+                <StaggeredFade
+                  text="Coming soon..." 
+                  className="text-6xl font-bold text-text-primary md:text-9xl lg:text-10xl">
+                </StaggeredFade>
               </div>
               <div>
-                <p className="text-base text-text-primary md:text-md">
-                  Site under construction, we're currently working on something new. Please check back soon.
-                </p>
-                <div className="mt-6 flex gap-x-4 md:mt-8">
-                  <Button asChild className="button-falcon-primary" title="Back to Home">
-                    <Link to="/">Back to Home</Link>
-                  </Button>
-                  <Button className="button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="Contact Us" variant="secondary">
-                    Contact Us
-                  </Button>
-                </div>
+                <TextFade direction="up" staggerChildren={0.2}>
+                  <p className="text-base text-text-primary md:text-md">
+                    Site under construction, we're currently working on something new. Please check back soon.
+                  </p>
+                  <div className="mt-6 flex gap-x-4 md:mt-8">
+                    <Button asChild className="button-falcon-primary" title="Back to Home">
+                      <Link to="/">Back to Home</Link>
+                    </Button>
+                    <Button className="button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="Contact Us" variant="secondary">
+                      Contact Us
+                    </Button>
+                  </div>
+                </TextFade>
               </div>
             </div>
           </div>

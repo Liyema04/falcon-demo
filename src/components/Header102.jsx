@@ -11,6 +11,8 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import React, { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
+import { TextFade } from "../animations/TextFade";
+import { StaggeredFade } from "../animations/StaggeredFade";
 
 const useCarousel = () => {
   const [api, setApi] = useState();
@@ -66,26 +68,28 @@ export function Header102() {
       className="grid grid-cols-1 items-center gap-y-16 overflow-hidden pt-16 sm:overflow-auto md:pt-24 lg:grid-cols-[50%_50%] lg:gap-y-0 lg:pt-0"
     >
       <div className="mx-[5%] max-w-md justify-self-start lg:ml-[5vw] lg:mr-20 lg:justify-self-end">
-        <h1 className="mb-5 text-6xl font-bold md:mb-6 md:text-9xl lg:text-10xl">
-          Roofing, partition and ceiling specialists in Centurion
-        </h1>
-        <p className="md:text-md">
-          Falcon Roofing Construction provides reliable workmanship across
-          Centurion, Midrand, and surrounding areas. We inspect, install, and
-          repair with a single objective: a roof that endures.
-        </p>
-        <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-          <Button className="button-falcon-primary" title="Request a quote">Request a quote</Button>
-          <Button
-            className="group button-falcon-whatsapp"
-            title="WhatsApp us"
-            variant="secondary"
-            size="sm"
-            iconLeft={<FaWhatsapp className="size-5 transition-transform duration-300 ease-in-out group-hover:scale-110" />}
-          >
-            Chat on WhatsApp
-          </Button>
-        </div>
+        <TextFade direction="up" staggerChildren={0.2}>
+          <h1 className="mb-5 text-6xl font-bold md:mb-6 md:text-9xl lg:text-10xl">
+            Roofing, partition and ceiling specialists in Centurion
+          </h1>
+          <p className="md:text-md">
+            Falcon Roofing Construction provides reliable workmanship across
+            Centurion, Midrand, and surrounding areas. We inspect, install, and
+            repair with a single objective: a roof that endures.
+          </p>
+          <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
+            <Button className="button-falcon-primary" title="Request a quote">Request a quote</Button>
+            <Button
+              className="group button-falcon-whatsapp"
+              title="WhatsApp us"
+              variant="secondary"
+              size="sm"
+              iconLeft={<FaWhatsapp className="size-5 transition-transform duration-300 ease-in-out group-hover:scale-110" />}
+            >
+              Chat on WhatsApp
+            </Button>
+          </div>
+        </TextFade>
       </div>
       <div className="relative clear-both h-[300px] max-h-[60rem] min-h-screen w-full bg-[#ddd] text-center">
         <Carousel
@@ -108,12 +112,14 @@ export function Header102() {
                   </div>
                   <div className="relative bg-falcon-cream px-6 pb-32 pt-6 sm:px-8 sm:pt-8">
                     <div className="w-full max-w-lg">
-                      <h6 className="mb-1 text-md font-bold leading-[1.4] md:text-xl">
-                        Professional Installations
-                      </h6>
-                      <p>
-                        We maintain professionalism throughout every stage of the project
-                      </p>
+                      <TextFade direction="up" staggerChildren={0.15}>
+                        <h6 className="mb-1 text-md font-bold leading-[1.4] md:text-xl">
+                          Professional Installations
+                        </h6>
+                        <p>
+                          We maintain professionalism throughout every stage of the project
+                        </p>
+                      </TextFade>
                     </div>
                   </div>
                 </div>
@@ -132,12 +138,14 @@ export function Header102() {
                   </div>
                   <div className="relative bg-falcon-cream px-6 pb-32 pt-6 sm:px-8 sm:pt-8">
                     <div className="w-full max-w-lg">
-                      <h6 className="mb-1 text-md font-bold leading-[1.4] md:text-xl">
-                        Thorough Inspections
-                      </h6>
-                      <p>
-                        We evaluate your roof's condition to ensure safety during inclement weather
-                      </p>
+                      <TextFade direction="up" staggerChildren={0.15}>
+                        <h6 className="mb-1 text-md font-bold leading-[1.4] md:text-xl">
+                          Thorough Inspections
+                        </h6>
+                        <p>
+                          We evaluate your roof's condition to ensure safety during inclement weather
+                        </p>
+                      </TextFade>
                     </div>
                   </div>
                 </div>
@@ -156,12 +164,14 @@ export function Header102() {
                   </div>
                   <div className="relative bg-falcon-cream px-6 pb-32 pt-6 sm:px-8 sm:pt-8">
                     <div className="w-full max-w-lg">
-                      <h6 className="mb-1 text-md font-bold leading-[1.4] md:text-xl">
-                        Efficient Repairs
-                      </h6>
-                      <p>
-                        We quickly fix roof damage to restore safety and prevent further issues
-                      </p>
+                      <TextFade direction="up" staggerChildren={0.15}>
+                        <h6 className="mb-1 text-md font-bold leading-[1.4] md:text-xl">
+                          Efficient Repairs
+                        </h6>
+                        <p>
+                          We quickly fix roof damage to restore safety and prevent further issues
+                        </p>
+                      </TextFade>
                     </div>
                   </div>
                 </div>

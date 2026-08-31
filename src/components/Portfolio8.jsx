@@ -3,20 +3,23 @@
 import { Button } from "@relume_io/relume-ui";
 import React from "react";
 import { RxChevronRight } from "react-icons/rx";
+import { TextFade } from "../animations/TextFade";
 
 export function Portfolio8() {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28 bg-background-secondary">
       <div className="container">
         <div className="mx-auto mb-12 max-w-lg text-center md:mb-18 lg:mb-20">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-falcon-totem-pole md:mb-4">Projects</p>
-          <h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
-            Work that holds
-          </h2>
-          <p className="md:text-md">
-            Real projects. Real roofs. Real proof of the trade.
-          </p>
-        </div>
+          <TextFade direction="up" staggerChildren={0.2}>
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-falcon-totem-pole md:mb-4">Projects</p>
+            <h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
+              Work that holds
+            </h2>
+            <p className="md:text-md">
+              Real projects. Real roofs. Real proof of the trade.
+            </p>
+          </TextFade>  
+          </div>
         <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 md:gap-y-16 lg:gap-x-12">
           <article className="border-none">
             <div className="aspect-[615/345] w-full overflow-hidden rounded-t-3xl">
@@ -127,9 +130,11 @@ export function Portfolio8() {
           </article>
         </div>
         <div className="mt-12 flex justify-center md:mt-18 lg:mt-20">
-          <Button className="button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="View all" variant="secondary" size="primary">
-            View all
-          </Button>
+          <TextFade direction="up" staggerChildren={0.2}>
+            <Button className="button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="View all" variant="secondary" size="primary">
+              View all
+            </Button>
+          </TextFade>
         </div>
       </div>
     </section>

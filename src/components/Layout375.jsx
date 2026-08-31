@@ -3,6 +3,7 @@
 import { Button } from "@relume_io/relume-ui";
 import React from "react";
 import { RxChevronRight } from "react-icons/rx";
+import { TextFade } from "../animations/TextFade";
 
 export function Layout375() {
   return (
@@ -10,13 +11,15 @@ export function Layout375() {
       <div className="container">
         <div className="rb-12 mb-12 md:mb-18 lg:mb-20">
           <div className="mx-auto max-w-lg text-center">
-            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-falcon-totem-pole md:mb-4">Services</p>
-            <h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
-              What we do
-            </h2>
-            <p className="md:text-md">
-              Roofing, ceilings and partitions. Done properly, the first time.
-            </p>
+            <TextFade direction="up" staggerChildren={0.2}>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-falcon-totem-pole md:mb-4">Services</p>
+              <h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
+                What we do
+              </h2>
+              <p className="md:text-md">
+                Roofing, ceilings and partitions. Done properly, the first time.
+              </p>
+            </TextFade>
           </div>
         </div>
         <div className="grid grid-cols-1 gap-6 md:gap-8">

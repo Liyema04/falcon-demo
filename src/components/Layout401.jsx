@@ -9,6 +9,7 @@ import requestIcon from "../assets/icons/quiz.svg"
 import propertyIcon from "../assets/icons/roof.svg"
 import receiveIcon from "../assets/icons/rate-review.svg"
 import constructionIcon from "../assets/icons/wrench-hammer.svg"
+import { TextFade } from "../animations/TextFade";
 
 export function Layout401() {
   return (
@@ -16,13 +17,15 @@ export function Layout401() {
       <div className="container">
         <div className="mb-12 md:mb-18 lg:mb-20">
           <div className="mx-auto max-w-lg text-center">
-            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-falcon-totem-pole md:mb-4">Process</p>
-            <h1 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
-              How it works
-            </h1>
-            <p className="md:text-md">
-              Four steps from first message to finished work.
-            </p>
+            <TextFade direction="up" staggerChildren={0.2}>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-falcon-totem-pole md:mb-4">Process</p>
+              <h1 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
+                How it works
+              </h1>
+              <p className="md:text-md">
+                Four steps from first message to finished work.
+              </p>
+            </TextFade>
           </div>
         </div>
         <div className="grid auto-cols-fr grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8 lg:grid-cols-4">
