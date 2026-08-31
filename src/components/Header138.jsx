@@ -5,6 +5,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { StaggeredFade } from "../animations/StaggeredFade";
 import { TextFade } from "../animations/TextFade";
+import falconLogoWhite from "../assets/Falcon-roofing-logo-white.png";
 
 export function Header138() {
   return (
@@ -20,7 +21,7 @@ export function Header138() {
         <div className="absolute bottom-[-15%] right-[5%] w-[30%] md:w-1/5">
           <img
             className="aspect-square size-full object-cover rounded-t-3xl"
-            src="src/assets/Falcon-roofing-logo-white.png"
+            src={falconLogoWhite}
             alt="Falcon Roofing Logo"
             width={80}
             height={80}

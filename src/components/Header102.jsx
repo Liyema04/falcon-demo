@@ -73,7 +73,7 @@ export function Header102() {
             Roofing, partition and ceiling specialists in Centurion
           </h1>
           <p className="md:text-md">
-            Falcon Roofing Construction provides reliable workmanship across
+            Falcon Roofing provides reliable workmanship across
             Centurion, Midrand, and surrounding areas. We inspect, install, and
             repair with a single objective: a roof that endures.
           </p>

@@ -5,6 +5,7 @@ import { motion, px } from "framer-motion";
 import React, { useState } from "react";
 import { BiNotepad, BiPhoneCall } from "react-icons/bi";
 import { RxChevronDown, RxChevronRight } from "react-icons/rx";
+import falconLogo from "../assets/Falcon-roofing-logo.png";
 
 // Service Drop down Icons:
 import roofIcon from "../assets/icons/roof.svg"
@@ -59,9 +60,9 @@ export function Navbar5() {
           <div className="flex min-h-16 items-center justify-between px-[5%] md:min-h-18 lg:min-h-full lg:px-0">
             <a href="#">
               <img
-                src="/src/assets/Falcon-roofing-logo.png"
+                src={falconLogo}
                 width="65px"
-                alt="Logo image"
+                alt="Falcon Roofing"
               />
             </a>
             <button
