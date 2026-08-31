@@ -1,27 +1,70 @@
 "use client";
 
 import { Button, Input } from "@relume_io/relume-ui";
-import React, { useState } from "react";
-import { BiBell } from "react-icons/bi";
+import { useEffect, useState } from "react";
+import { BiBell, BiCheck } from "react-icons/bi";
+import { cn } from "../lib/cn";
 
-const useForm = () => {
+const BUTTON_LABELS = {
+  idle: "Subscribe",
+  sending: "Subscribing",
+  sent: "Subscribed",
+};
+
+const useNewsletterForm = () => {
   const [email, setEmail] = useState("");
+  const [submitStatus, setSubmitStatus] = useState("idle");
+  const isSubmitting = submitStatus !== "idle";
+
+  useEffect(() => {
+    if (submitStatus === "idle") {
+      return undefined;
+    }
+
+    const timeoutId = window.setTimeout(() => {
+      if (submitStatus === "sending") {
+        setSubmitStatus("sent");
+        return;
+      }
+
+      setEmail("");
+      setSubmitStatus("idle");
+    }, 2000);
+
+    return () => window.clearTimeout(timeoutId);
+  }, [submitStatus]);
+
   const handleSetEmail = (event) => {
     setEmail(event.target.value);
   };
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log({ email });
+
+    if (isSubmitting) {
+      return;
+    }
+
+    if (!event.currentTarget.checkValidity()) {
+      event.currentTarget.reportValidity();
+      return;
+    }
+
+    setSubmitStatus("sending");
   };
+
   return {
     email,
     handleSetEmail,
     handleSubmit,
+    isSubmitting,
+    submitStatus,
+    buttonLabel: BUTTON_LABELS[submitStatus],
   };
 };
 
 export function Footer6() {
-  const formState = useForm();
+  const formState = useNewsletterForm();
   return (
     <footer id="relume" className="px-[5%] py-12 md:py-18 lg:py-20 bg-background-secondary">
       <div className="container">
@@ -38,19 +81,41 @@ export function Footer6() {
               <Input
                 className="h-12 rounded-falcon-control border-falcon-ink/20 bg-falcon-white px-4 shadow-none transition-colors placeholder:text-falcon-ink/45 focus-visible:border-falcon-totem-pole focus-visible:ring-2 focus-visible:ring-falcon-totem-pole/15"
                 id="email"
+                name="email"
                 type="email"
                 placeholder="Enter your email"
                 value={formState.email}
                 onChange={formState.handleSetEmail}
+                autoComplete="email"
+                required
+                disabled={formState.isSubmitting}
               />
               <Button
-                className="group button-falcon-subscribe"
-                title="Subscribe"
+                type="submit"
+                className={cn(
+                  "group button-falcon-subscribe",
+                  formState.submitStatus === "sent" &&
+                    "!border-falcon-christi !bg-falcon-christi !text-falcon-white disabled:opacity-100",
+                )}
+                title={formState.buttonLabel}
                 variant="secondary"
                 size="sm"
-                iconLeft={<BiBell className="size-5 transition-transform duration-300 ease-in-out group-hover:rotate-[20deg] group-hover:scale-110" />}
+                disabled={formState.isSubmitting}
+                aria-busy={formState.submitStatus === "sending"}
+                iconLeft={
+                  formState.submitStatus === "sent" ? (
+                    <BiCheck className="size-5" aria-hidden="true" />
+                  ) : (
+                    <BiBell
+                      className="size-5 transition-transform duration-300 ease-in-out group-hover:rotate-[20deg] group-hover:scale-110"
+                      aria-hidden="true"
+                    />
+                  )
+                }
               >
-                Subscribe
+                <span aria-live="polite" aria-atomic="true">
+                  {formState.buttonLabel}
+                </span>
               </Button>
             </form>
             <p className="text-xs">
