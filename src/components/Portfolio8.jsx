@@ -4,6 +4,10 @@ import { Button } from "@relume_io/relume-ui";
 import React from "react";
 import { RxChevronRight } from "react-icons/rx";
 import { TextFade } from "../animations/TextFade";
+import {
+  AnimatedCard,
+  AnimatedCardSection,
+} from "../animations/AnimatedCardSection";
 
 export function Portfolio8() {
   return (
@@ -20,115 +24,126 @@ export function Portfolio8() {
             </p>
           </TextFade>  
           </div>
-        <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 md:gap-y-16 lg:gap-x-12">
-          <article className="border-none">
-            <div className="aspect-[615/345] w-full overflow-hidden rounded-t-3xl">
-              <a href="#" className="block size-full">
-                <img
-                  src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787689058/roof-replace-clean_yxyxks.avif"
-                  className="size-full object-cover"
-                  alt="Centurion Roof Replacement"
-                />
-              </a>
-            </div>
-            <div className="px-5 py-6 sm:px-6 rounded-b-3xl bg-falcon-cream shadow-large">
-              <h3 className="mb-2 text-xl font-bold md:text-2xl">
-                <a href="#">Centurion roof replacement</a>
-              </h3>
-              <p>
-                Full strip and replacement of a storm-damaged residential roof
-                in Centurion.
-              </p>
-              <ul className="mt-3 flex flex-wrap gap-2 md:mt-4">
-                <li className="flex">
-                  <a
-                    href="#"
-                    className="bg-background-secondary px-2 py-1 text-sm font-semibold text-falcon-harvest rounded-md"
-                  >
-                    Roofing
-                  </a>
-                </li>
-                <li className="flex">
-                  <a
-                    href="#"
-                    className="bg-background-secondary px-2 py-1 text-sm font-semibold text-falcon-harvest rounded-md"
-                  >
-                    Centurion
-                  </a>
-                </li>
-                <li className="flex">
-                  <a
-                    href="#"
-                    className="bg-background-secondary px-2 py-1 text-sm font-semibold text-falcon-harvest rounded-md"
-                  >
-                    Residential
-                  </a>
-                </li>
-              </ul>
-              <Button
-                title="View project"
-                variant="link"
-                size="link"
-                iconRight={<RxChevronRight />}
-                className="mt-5 font-semibold text-gray-600 md:mt-6"
-              >
-                <a href="#">View project</a>
-              </Button>
-            </div>
-          </article>
-          <article className="border-none">
-            <div className="aspect-[615/345] w-full overflow-hidden rounded-t-3xl"> 
-              <a href="#" className="block size-full">
-                <img
-                  src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787698663/midstream-cleam_txjcqo.avif"
-                  className="size-full object-cover"
-                  alt="Worker fixing zinc panels"
-                />
-              </a>
-            </div>
-            <div className="px-5 py-6 sm:px-6 rounded-b-3xl bg-falcon-cream shadow-large">
-              <h3 className="mb-2 text-xl font-bold md:text-2xl">
-                <a href="#">Roof repair services</a>
-              </h3>
-              <p>Team member access roof to inspect and identify areas requiring repair.</p>
-              <ul className="mt-3 flex flex-wrap gap-2 md:mt-4">
-                <li className="flex">
-                  <a
-                    href="#"
-                    className="bg-background-secondary px-2 py-1 text-sm font-semibold text-falcon-harvest rounded-md"
-                  >
-                    Repair
-                  </a>
-                </li>
-                <li className="flex">
-                  <a
-                    href="#"
-                    className="bg-background-secondary px-2 py-1 text-sm font-semibold text-falcon-harvest rounded-md"
-                  >
-                    Midstream
-                  </a>
-                </li>
-                <li className="flex">
-                  <a
-                    href="#"
-                    className="bg-background-secondary px-2 py-1 text-sm font-semibold text-falcon-harvest rounded-md"
-                  >
-                    Recent work
-                  </a>
-                </li>
-              </ul>
-              <Button
-                title="View project"
-                variant="link"
-                size="link"
-                iconRight={<RxChevronRight />}
-                className="mt-5 font-semibold text-gray-600 md:mt-6"
-              >
-                <a href="#">View project</a>
-              </Button>
-            </div>
-          </article>
-        </div>
+          {/* Animate Sect */}
+          <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 md:gap-y-16 lg:gap-x-12">
+            {/* Animate here */}
+            <AnimatedCardSection>
+              <AnimatedCard direction="left" delay={0.2}>
+                <article className="border-none">
+                  <div className="aspect-[615/345] w-full overflow-hidden rounded-t-3xl">
+                    <a href="#" className="block size-full">
+                      <img
+                        src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787689058/roof-replace-clean_yxyxks.avif"
+                        className="size-full object-cover"
+                        alt="Centurion Roof Replacement"
+                      />
+                    </a>
+                  </div>
+                  <div className="px-5 py-6 sm:px-6 rounded-b-3xl bg-falcon-cream shadow-large">
+                    <h3 className="mb-2 text-xl font-bold md:text-2xl">
+                      <a href="#">Centurion roof replacement</a>
+                    </h3>
+                    <p>
+                      Full strip and replacement of a storm-damaged residential roof
+                      in Centurion.
+                    </p>
+                    <ul className="mt-3 flex flex-wrap gap-2 md:mt-4">
+                      <li className="flex">
+                        <a
+                          href="#"
+                          className="bg-background-secondary px-2 py-1 text-sm font-semibold text-falcon-harvest rounded-md"
+                        >
+                          Roofing
+                        </a>
+                      </li>
+                      <li className="flex">
+                        <a
+                          href="#"
+                          className="bg-background-secondary px-2 py-1 text-sm font-semibold text-falcon-harvest rounded-md"
+                        >
+                          Centurion
+                        </a>
+                      </li>
+                      <li className="flex">
+                        <a
+                          href="#"
+                          className="bg-background-secondary px-2 py-1 text-sm font-semibold text-falcon-harvest rounded-md"
+                        >
+                          Residential
+                        </a>
+                      </li>
+                    </ul>
+                    <Button
+                      title="View project"
+                      variant="link"
+                      size="link"
+                      iconRight={<RxChevronRight />}
+                      className="mt-5 font-semibold text-gray-600 md:mt-6"
+                    >
+                      <a href="#">View project</a>
+                    </Button>
+                  </div>
+                </article>
+              </AnimatedCard>
+            </AnimatedCardSection>
+            {/* Animate here */}
+            <AnimatedCardSection>
+              <AnimatedCard direction="right" delay={0.2}>
+                <article className="border-none">
+                  <div className="aspect-[615/345] w-full overflow-hidden rounded-t-3xl"> 
+                    <a href="#" className="block size-full">
+                      <img
+                        src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787698663/midstream-cleam_txjcqo.avif"
+                        className="size-full object-cover"
+                        alt="Worker fixing zinc panels"
+                      />
+                    </a>
+                  </div>
+                  <div className="px-5 py-6 sm:px-6 rounded-b-3xl bg-falcon-cream shadow-large">
+                    <h3 className="mb-2 text-xl font-bold md:text-2xl">
+                      <a href="#">Roof repair services</a>
+                    </h3>
+                    <p>Team member access roof to inspect and identify areas requiring repair.</p>
+                    <ul className="mt-3 flex flex-wrap gap-2 md:mt-4">
+                      <li className="flex">
+                        <a
+                          href="#"
+                          className="bg-background-secondary px-2 py-1 text-sm font-semibold text-falcon-harvest rounded-md"
+                        >
+                          Repair
+                        </a>
+                      </li>
+                      <li className="flex">
+                        <a
+                          href="#"
+                          className="bg-background-secondary px-2 py-1 text-sm font-semibold text-falcon-harvest rounded-md"
+                        >
+                          Midstream
+                        </a>
+                      </li>
+                      <li className="flex">
+                        <a
+                          href="#"
+                          className="bg-background-secondary px-2 py-1 text-sm font-semibold text-falcon-harvest rounded-md"
+                        >
+                          Recent work
+                        </a>
+                      </li>
+                    </ul>
+                    <Button
+                      title="View project"
+                      variant="link"
+                      size="link"
+                      iconRight={<RxChevronRight />}
+                      className="mt-5 font-semibold text-gray-600 md:mt-6"
+                    >
+                      <a href="#">View project</a>
+                    </Button>
+                  </div>
+                </article>
+              </AnimatedCard>
+            </AnimatedCardSection>
+          </div>
         <div className="mt-12 flex justify-center md:mt-18 lg:mt-20">
           <TextFade direction="up" staggerChildren={0.2}>
             <Button className="button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="View all" variant="secondary" size="primary">
