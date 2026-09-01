@@ -4,6 +4,7 @@ import { Button, Input } from "@relume_io/relume-ui";
 import { useEffect, useState } from "react";
 import { BiBell, BiCheck } from "react-icons/bi";
 import { cn } from "../lib/cn";
+import falconLogo from "../assets/Falcon-roofing-logo.png";
 
 const BUTTON_LABELS = {
   idle: "Subscribe",
@@ -119,7 +120,7 @@ export function Footer6() {
               </Button>
             </form>
             <p className="text-xs">
-              By subscribing you agree to with our Privacy Policy
+              By subscribing you agree to our <a href="/legal/privacy-policy" className="underline">Privacy Policy</a>
             </p>
           </div>
         </div>
@@ -131,27 +132,27 @@ export function Footer6() {
             <h2 className="mb-2 font-semibold">Services</h2>
             <ul>
               <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
+                <a href="/services/roof-inspection" className="flex items-center gap-3">
                   Roof inspection
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
+                <a href="/services/roof-installation" className="flex items-center gap-3">
                   Roof installation
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
+                <a href="/services/roof-repair" className="flex items-center gap-3">
                   Roof repair
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
+                <a href="/services/roof-damage-repair" className="flex items-center gap-3">
                   Roof damage
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
+                <a href="/services/ceilings" className="flex items-center gap-3">
                   Ceilings
                 </a>
               </li>
@@ -161,22 +162,22 @@ export function Footer6() {
             <h2 className="mb-2 font-semibold">The Falcon Experience</h2>
             <ul>
               <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
+                <a href="/" className="flex items-center gap-3">
                   Home
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
+                <a href="/projects" className="flex items-center gap-3">
                   Projects
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
+                <a href="/how-it-works" className="flex items-center gap-3">
                   How it works
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
+                <a href="/why-falcon" className="flex items-center gap-3">
                   Why Falcon
                 </a>
               </li>
@@ -186,17 +187,17 @@ export function Footer6() {
             <h2 className="mb-2 font-semibold">Areas</h2>
             <ul>
               <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
+                <a href="/service-areas/centurion" className="flex items-center gap-3">
                   Centurion
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
+                <a href="/service-areas/midrand" className="flex items-center gap-3">
                   Midrand
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
+                <a href="/service-areas" className="flex items-center gap-3">
                   Other
                 </a>
               </li>
@@ -206,7 +207,7 @@ export function Footer6() {
             <h2 className="mb-2 font-semibold">Follow us</h2>
             <ul>
               <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
+                <a href="/social/facebook" className="flex items-center gap-3">
                   Facebook
                 </a>
               </li>
@@ -216,22 +217,22 @@ export function Footer6() {
             <h2 className="mb-2 font-semibold">Legal</h2>
             <ul>
               <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
+                <a href="/legal/privacy-policy" className="flex items-center gap-3">
                   Privacy policy
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
+                <a href="/legal/terms-of-service" className="flex items-center gap-3">
                   Terms of service
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
+                <a href="/legal/cookie-policy" className="flex items-center gap-3">
                   Cookie policy
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
+                <a href="/legal/accessibility" className="flex items-center gap-3">
                   Accessibility
                 </a>
               </li>
@@ -241,17 +242,17 @@ export function Footer6() {
             <h2 className="mb-2 font-semibold">Contact</h2>
             <ul>
               <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
+                <a href="/#quote" className="flex items-center gap-3">
                   Get a quote
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
+                <a href="https://wa.me/27731244478" className="flex items-center gap-3">
                   Chat on WhatsApp
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
+                <a href="tel:+27731244478" className="flex items-center gap-3">
                   Talk to Our Team
                 </a>
               </li>
@@ -260,9 +261,9 @@ export function Footer6() {
         </div>
         <div className="h-px w-full bg-black" />
         <div className="flex flex-col items-start pb-4 pt-6 text-sm sm:flex-row sm:items-center sm:justify-between md:pb-0 md:pt-8">
-          <a href="#" className="mb-6 sm:mb-0">
+          <a href="/" className="mb-6 sm:mb-0" aria-label="Falcon Roofing home">
             <img
-              src="/src/assets/Falcon-roofing-logo.png"
+              src={falconLogo}
               width="65px"
               alt="Logo image"
             />

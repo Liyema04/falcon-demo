@@ -7,7 +7,6 @@ import {
   TabsList,
   TabsTrigger,
 } from "@relume_io/relume-ui";
-import React from "react";
 import { RxChevronRight } from "react-icons/rx";
 import { TextFade } from "../animations/TextFade";
 import {
@@ -32,18 +31,18 @@ export function Layout504() {
                 and do the work properly. That is our promise.
               </p>
               <div className="mt-6 flex items-center justify-center gap-x-4 md:mt-8">
-                <Button className="button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="Get a quote" variant="secondary">
-                  Get a quote
+                <Button asChild className="button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="Get a quote" variant="secondary">
+                  <a href="/#quote">Get a quote</a>
                 </Button>
                 <Button
+                  asChild
                   className="font-semibold text-falcon-harvest"
                   title="Our work"
                   variant="link"
                   size="link"
                   iconRight={<RxChevronRight />}
                 >
-                  Our work
-                  <hr/>
+                  <a href="/projects">Our work</a>
                 </Button>
               </div>
             </TextFade>
@@ -101,17 +100,18 @@ export function Layout504() {
                         patch jobs that fail in the next storm.
                       </p>
                       <div className="mt-6 flex items-center gap-x-4 md:mt-8">
-                        <Button className="text-sm md:text-base button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="Get a quote" variant="secondary">
-                          Get a quote
+                        <Button asChild className="text-sm md:text-base button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="Get a quote" variant="secondary">
+                          <a href="/#quote">Get a quote</a>
                         </Button>
                         <Button
+                          asChild
                           className="text-sm font-semibold text-falcon-harvest md:text-base"
                           title="Our work"
                           variant="link"
                           size="link"
                           iconRight={<RxChevronRight />}
                         >
-                          Our work
+                          <a href="/projects">Our work</a>
                         </Button>
                       </div>
                     </div>
@@ -144,17 +144,18 @@ export function Layout504() {
                         From the first inspection to the final check, we communicate clearly, work responsibly and follow through on every commitment.
                       </p>
                       <div className="mt-6 flex items-center gap-x-4 md:mt-8">
-                        <Button className="text-sm md:text-base button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="Get a quote" variant="secondary">
-                          Get a quote
+                        <Button asChild className="text-sm md:text-base button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="Get a quote" variant="secondary">
+                          <a href="/#quote">Get a quote</a>
                         </Button>
                         <Button
+                          asChild
                           className="text-sm font-semibold text-falcon-harvest md:text-base"
                           title="Our work"
                           variant="link"
                           size="link"
                           iconRight={<RxChevronRight />}
                         >
-                          Our work
+                          <a href="/projects">Our work</a>
                         </Button>
                       </div>
                     </div>
@@ -187,17 +188,18 @@ export function Layout504() {
                         We understand how each part of a roofing system works together, helping us identify problems and choose the right solution.
                       </p>
                       <div className="mt-6 flex items-center gap-x-4 md:mt-8">
-                        <Button className="text-sm md:text-base button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="Get a quote" variant="secondary">
-                          Get a quote
+                        <Button asChild className="text-sm md:text-base button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="Get a quote" variant="secondary">
+                          <a href="/#quote">Get a quote</a>
                         </Button>
                         <Button
+                          asChild
                           className="text-sm font-semibold text-falcon-harvest md:text-base"
                           title="Our work"
                           variant="link"
                           size="link"
                           iconRight={<RxChevronRight />}
                         >
-                          Our work
+                          <a href="/projects">Our work</a>
                         </Button>
                       </div>
                     </div>

@@ -47,13 +47,14 @@ export function Layout375() {
                   </div>
                   <div className="mt-5 flex items-center gap-4 md:mt-6">
                     <Button
+                      asChild
                       className="font-semibold text-falcon-harvest"
                       title="More"
                       variant="link"
                       size="link"
                       iconRight={<RxChevronRight />}
                     >
-                      More
+                      <a href="/services/roof-inspection">More</a>
                     </Button>
                   </div>
                 </div>
@@ -79,13 +80,14 @@ export function Layout375() {
                   </div>
                   <div className="mt-5 flex items-center gap-4 md:mt-6">
                     <Button
+                      asChild
                       className="font-semibold text-falcon-harvest"
                       title="More"
                       variant="link"
                       size="link"
                       iconRight={<RxChevronRight />}
                     >
-                      More
+                      <a href="/services/roof-installation">More</a>
                     </Button>
                   </div>
                 </div>
@@ -111,13 +113,14 @@ export function Layout375() {
                   </div>
                   <div className="mt-5 flex items-center gap-4 md:mt-6">
                     <Button
+                      asChild
                       className="font-semibold text-falcon-harvest"
                       title="More"
                       variant="link"
                       size="link"
                       iconRight={<RxChevronRight />}
                     >
-                      More
+                      <a href="/services/roof-repair">More</a>
                     </Button>
                   </div>
                 </div>
@@ -143,13 +146,14 @@ export function Layout375() {
                   </div>
                   <div className="mt-5 flex items-center gap-4 md:mt-6">
                     <Button
+                      asChild
                       className="font-semibold text-falcon-harvest"
                       title="More"
                       variant="link"
                       size="link"
                       iconRight={<RxChevronRight />}
                     >
-                      More
+                      <a href="/services/roof-damage-repair">More</a>
                     </Button>
                   </div>
                 </div>
@@ -182,17 +186,18 @@ export function Layout375() {
                     </p>
                   </div>
                   <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
-                    <Button className="button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="All services" variant="secondary">
-                      All services
+                    <Button asChild className="button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="All services" variant="secondary">
+                      <a href="/services">All services</a>
                     </Button>
                     <Button
+                      asChild
                       className="font-semibold text-falcon-harvest"
                       title="Get a quote"
                       variant="link"
                       size="link"
                       iconRight={<RxChevronRight />}
                     >
-                      Get a quote
+                      <a href="/#quote">Get a quote</a>
                     </Button>
                   </div>
                 </div>

@@ -9,10 +9,9 @@ import {
   CarouselPrevious,
 } from "@relume_io/relume-ui";
 import Autoplay from "embla-carousel-autoplay";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { TextFade } from "../animations/TextFade";
-import { StaggeredFade } from "../animations/StaggeredFade";
 
 const useCarousel = () => {
   const [api, setApi] = useState();
@@ -20,12 +19,15 @@ const useCarousel = () => {
 
   useEffect(() => {
     if (!api) {
-      return;
+      return undefined;
     }
-    setCurrent(api.selectedScrollSnap() + 1);
-    api.on("select", () => {
+
+    const handleSelect = () => {
       setCurrent(api.selectedScrollSnap() + 1);
-    });
+    };
+
+    api.on("select", handleSelect);
+    return () => api.off("select", handleSelect);
   }, [api]);
 
   const options = {
@@ -78,15 +80,18 @@ export function Header102() {
             repair with a single objective: a roof that endures.
           </p>
           <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-            <Button className="button-falcon-primary" title="Request a quote">Request a quote</Button>
+            <Button asChild className="button-falcon-primary" title="Request a quote">
+              <a href="/#quote">Request a quote</a>
+            </Button>
             <Button
+              asChild
               className="group button-falcon-whatsapp"
               title="WhatsApp us"
               variant="secondary"
               size="sm"
               iconLeft={<FaWhatsapp className="size-5 transition-transform duration-300 ease-in-out group-hover:scale-110" />}
             >
-              Chat on WhatsApp
+              <a href="https://wa.me/27731244478">Chat on WhatsApp</a>
             </Button>
           </div>
         </TextFade>

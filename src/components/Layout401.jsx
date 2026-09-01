@@ -1,7 +1,6 @@
 "use client";
 
 import { Button } from "@relume_io/relume-ui";
-import React from "react";
 import { RxChevronRight } from "react-icons/rx";
 
 // Process Icons 
@@ -52,13 +51,14 @@ export function Layout401() {
                 <p>Send us a message or call. Tell us what you need.</p>
                 <div className="mt-5 md:mt-6">
                   <Button
+                    asChild
                     className="font-semibold text-falcon-harvest"
                     title="Start"
                     variant="link"
                     size="link"
                     iconRight={<RxChevronRight />}
                   >
-                    Get in touch
+                    <a href="/contact">Get in touch</a>
                   </Button>
                 </div>
               </div>
@@ -83,13 +83,14 @@ export function Layout401() {
                 <p>We come out, look at the job and take measurements.</p>
                 <div className="mt-5 md:mt-6">
                   <Button
+                    asChild
                     className="font-semibold text-falcon-harvest"
                     title="Next"
                     variant="link"
                     size="link"
                     iconRight={<RxChevronRight />}
                   >
-                    Begin inspection
+                    <a href="/services/roof-inspection">Begin inspection</a>
                   </Button>
                 </div>
               </div>
@@ -114,13 +115,14 @@ export function Layout401() {
                 <p>You get a clear recommendation and an honest price metrics.</p>
                 <div className="mt-5 md:mt-6">
                   <Button
+                    asChild
                     className="font-semibold text-falcon-harvest"
                     title="Next"
                     variant="link"
                     size="link"
                     iconRight={<RxChevronRight />}
                   >
-                    Approve quote
+                    <a href="/#quote">Approve quote</a>
                   </Button>
                 </div>
               </div>
@@ -145,13 +147,14 @@ export function Layout401() {
                 <p>We arrive, do the job and leave the site clean.</p>
                 <div className="mt-5 md:mt-6">
                   <Button
+                    asChild
                     className="font-semibold text-falcon-harvest"
                     title="Finish"
                     variant="link"
                     size="link"
                     iconRight={<RxChevronRight />}
                   >
-                    Start the work
+                    <a href="/#quote">Start the work</a>
                   </Button>
                 </div>
               </div>

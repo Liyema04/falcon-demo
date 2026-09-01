@@ -86,7 +86,7 @@ export function Contact6() {
   };
 
   return (
-    <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
+    <section id="quote" className="scroll-mt-6 px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container grid grid-cols-1 items-start gap-y-12 md:grid-flow-row md:grid-cols-2 md:gap-x-12 lg:grid-flow-col lg:gap-x-20 lg:gap-y-16">
         <div>
           <TextFade direction="up" staggerChildren={0.2}>
@@ -102,15 +102,15 @@ export function Contact6() {
             <div className="grid grid-cols-1 border-t border-falcon-ink/15">
               <div className="flex items-start gap-4 border-b border-falcon-ink/15 py-4">
                 <BiEnvelope className="mt-0.5 size-5 flex-none text-falcon-totem-pole" />
-                <p className="text-sm font-medium text-falcon-ink md:text-base">enquiry@falconroofing.co.za</p>
+                <a href="mailto:enquiry@falconroofing.co.za" className="text-sm font-medium text-falcon-ink md:text-base">enquiry@falconroofing.co.za</a>
               </div>
               <div className="flex items-start gap-4 border-b border-falcon-ink/15 py-4">
                 <BiPhone className="mt-0.5 size-5 flex-none text-falcon-totem-pole" />
-                <p className="text-sm font-medium text-falcon-ink md:text-base">073 124 4478</p>
+                <a href="tel:+27731244478" className="text-sm font-medium text-falcon-ink md:text-base">073 124 4478</a>
               </div>
               <div className="flex items-start gap-4 py-4">
                 <BiMap className="mt-0.5 size-5 flex-none text-falcon-totem-pole" />
-                <p className="text-sm font-medium text-falcon-ink md:text-base">8244/1 Sebini St, Rua Vista, Pretoria, 0175</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=8244%2F1+Sebini+St%2C+Rua+Vista%2C+Pretoria%2C+0175" className="text-sm font-medium text-falcon-ink md:text-base">8244/1 Sebini St, Rua Vista, Pretoria, 0175</a>
               </div>
             </div>
           </TextFade>

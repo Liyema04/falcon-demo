@@ -1,8 +1,8 @@
 "use client";
 
 import { Button, useMediaQuery } from "@relume_io/relume-ui";
-import { motion, px } from "framer-motion";
-import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { useState } from "react";
 import { BiNotepad, BiPhoneCall } from "react-icons/bi";
 import { RxChevronDown, RxChevronRight } from "react-icons/rx";
 import falconLogo from "../assets/Falcon-roofing-logo.png";
@@ -58,7 +58,7 @@ export function Navbar5() {
       <div className="size-full lg:flex lg:items-center lg:justify-between">
         <div className="lg:flex">
           <div className="flex min-h-16 items-center justify-between px-[5%] md:min-h-18 lg:min-h-full lg:px-0">
-            <a href="#">
+            <a href="/" aria-label="Falcon Roofing home">
               <img
                 src={falconLogo}
                 width="65px"
@@ -184,7 +184,7 @@ export function Navbar5() {
                           Roofing services
                         </h4>
                         <a
-                          href="#"
+                          href="/services/roof-inspection"
                           className="grid w-full grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
@@ -203,7 +203,7 @@ export function Navbar5() {
                           </div>
                         </a>
                         <a
-                          href="#"
+                          href="/services/roof-installation"
                           className="grid w-full grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
@@ -222,7 +222,7 @@ export function Navbar5() {
                           </div>
                         </a>
                         <a
-                          href="#"
+                          href="/services/roof-repair"
                           className="grid w-full grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
@@ -241,7 +241,7 @@ export function Navbar5() {
                           </div>
                         </a>
                         <a
-                          href="#"
+                          href="/services/ceilings"
                           className="grid w-full grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
@@ -265,7 +265,7 @@ export function Navbar5() {
                           Company
                         </h4>
                         <a
-                          href="#"
+                          href="/about"
                           className="grid w-full grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
@@ -284,7 +284,7 @@ export function Navbar5() {
                           </div>
                         </a>
                         <a
-                          href="#"
+                          href="/contact"
                           className="grid w-full grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
@@ -303,7 +303,7 @@ export function Navbar5() {
                           </div>
                         </a>
                         <a
-                          href="#"
+                          href="/service-areas"
                           className="grid w-full grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
@@ -322,7 +322,7 @@ export function Navbar5() {
                           </div>
                         </a>
                         <a
-                          href="#"
+                          href="/projects"
                           className="grid w-full grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
                         >
                           <div className="flex size-6 flex-col items-center justify-center">
@@ -349,7 +349,7 @@ export function Navbar5() {
                         </h4>
                         <div className="grid auto-cols-fr grid-cols-1 grid-rows-[auto_auto] items-start gap-y-2 lg:grid-rows-[auto]">
                           <a
-                            href="#"
+                            href="/resources/roof-care"
                             className="flex auto-cols-fr grid-cols-[0.6fr_1fr] flex-col gap-x-6 py-2 md:grid"
                           >
                             <div className="relative w-full pt-[66.66%]">
@@ -364,20 +364,13 @@ export function Navbar5() {
                               <p className="text-sm">
                                 Simple maintenance tips for Gauteng homeowners
                               </p>
-                              <div className="mt-1.5">
-                                <Button
-                                  title="Read more"
-                                  variant="link"
-                                  size="link"
-                                  className="text-sm font-semibold text-falcon-harvest underline"
-                                >
-                                  Read more
-                                </Button>
-                              </div>
+                              <span className="mt-1.5 text-sm font-semibold text-falcon-harvest underline">
+                                Read more
+                              </span>
                             </div>
                           </a>
                           <a
-                            href="#"
+                            href="/projects/recent-roof-installation"
                             className="flex auto-cols-fr grid-cols-[0.6fr_1fr] flex-col gap-x-6 py-2 md:grid"
                           >
                             <div className="relative w-full pt-[66.66%]">
@@ -394,28 +387,22 @@ export function Navbar5() {
                               <p className="text-sm">
                                 Behind the scenes of a recent roof installation
                               </p>
-                              <div className="mt-1.5">
-                                <Button
-                                  title="Read more"
-                                  variant="link"
-                                  size="link"
-                                  className="text-sm font-semibold text-falcon-harvest underline"
-                                >
-                                  Read more
-                                </Button>
-                              </div>
+                              <span className="mt-1.5 text-sm font-semibold text-falcon-harvest underline">
+                                Read more
+                              </span>
                             </div>
                           </a>
                         </div>
                         <div className="flex items-center">
                           <Button
+                            asChild
                             className="font-semibold text-falcon-totem-pole"
                             title="See all projects"
                             variant="link"
                             size="link"
                             iconRight={<RxChevronRight />}
                           >
-                            See all projects
+                            <a href="/projects">See all projects</a>
                           </Button>
                         </div>
                       </div>
@@ -427,25 +414,26 @@ export function Navbar5() {
             </div>
             <div className="mt-6 flex w-full flex-col gap-y-4 pb-24 lg:hidden lg:pb-0">
               <Button
+                asChild
                 className="w-full button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5"
                 title="Button"
                 variant="secondary"
                 size="sm"
               >
-                Let's Talk 
+                <a href="tel:+27731244478">Let's Talk</a>
               </Button>
-              <Button className="w-full button-falcon-primary" title="Button" size="sm">
-                Get a Quote
+              <Button asChild className="w-full button-falcon-primary" title="Get a quote" size="sm">
+                <a href="/#quote">Get a Quote</a>
               </Button>
             </div>
           </motion.div>
         </div>
         <div className="hidden lg:flex lg:gap-4">
-          <Button className="button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="Call" variant="secondary" size="sm" iconLeft={<BiPhoneCall className="size-4" />}>
-            Let's Talk
+          <Button asChild className="button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="Call" variant="secondary" size="sm" iconLeft={<BiPhoneCall className="size-4" />}>
+            <a href="tel:+27731244478">Let's Talk</a>
           </Button>
-          <Button className="button-falcon-primary" title="Quote" size="sm" iconLeft={<BiNotepad className="size-4" />}>
-            Get a Quote
+          <Button asChild className="button-falcon-primary" title="Quote" size="sm" iconLeft={<BiNotepad className="size-4" />}>
+            <a href="/#quote">Get a Quote</a>
           </Button>
         </div>
       </div>

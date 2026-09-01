@@ -1,7 +1,6 @@
 "use client";
 
 import { Button } from "@relume_io/relume-ui";
-import React from "react";
 import { Link } from "react-router-dom";
 import { StaggeredFade } from "../animations/StaggeredFade";
 import { TextFade } from "../animations/TextFade";
@@ -47,8 +46,8 @@ export function Header138() {
                     <Button asChild className="button-falcon-primary" title="Back to Home">
                       <Link to="/">Back to Home</Link>
                     </Button>
-                    <Button className="button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="Contact Us" variant="secondary">
-                      Contact Us
+                    <Button asChild className="button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="Contact Us" variant="secondary">
+                      <Link to="/contact">Contact Us</Link>
                     </Button>
                   </div>
                 </TextFade>

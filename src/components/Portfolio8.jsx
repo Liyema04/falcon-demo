@@ -1,7 +1,6 @@
 "use client";
 
 import { Button } from "@relume_io/relume-ui";
-import React from "react";
 import { RxChevronRight } from "react-icons/rx";
 import { TextFade } from "../animations/TextFade";
 import {
@@ -31,7 +30,7 @@ export function Portfolio8() {
               <AnimatedCard direction="left" delay={0.2}>
                 <article className="border-none">
                   <div className="aspect-[615/345] w-full overflow-hidden rounded-t-3xl">
-                    <a href="#" className="block size-full">
+                    <a href="/projects/centurion-roof-replacement" className="block size-full">
                       <img
                         src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787689058/roof-replace-clean_yxyxks.avif"
                         className="size-full object-cover"
@@ -41,7 +40,7 @@ export function Portfolio8() {
                   </div>
                   <div className="px-5 py-6 sm:px-6 rounded-b-3xl bg-falcon-cream shadow-large">
                     <h3 className="mb-2 text-xl font-bold md:text-2xl">
-                      <a href="#">Centurion roof replacement</a>
+                      <a href="/projects/centurion-roof-replacement">Centurion roof replacement</a>
                     </h3>
                     <p>
                       Full strip and replacement of a storm-damaged residential roof
@@ -50,7 +49,7 @@ export function Portfolio8() {
                     <ul className="mt-3 flex flex-wrap gap-2 md:mt-4">
                       <li className="flex">
                         <a
-                          href="#"
+                          href="/services/roofing"
                           className="bg-background-secondary px-2 py-1 text-sm font-semibold text-falcon-harvest rounded-md"
                         >
                           Roofing
@@ -58,7 +57,7 @@ export function Portfolio8() {
                       </li>
                       <li className="flex">
                         <a
-                          href="#"
+                          href="/service-areas/centurion"
                           className="bg-background-secondary px-2 py-1 text-sm font-semibold text-falcon-harvest rounded-md"
                         >
                           Centurion
@@ -66,7 +65,7 @@ export function Portfolio8() {
                       </li>
                       <li className="flex">
                         <a
-                          href="#"
+                          href="/projects/residential"
                           className="bg-background-secondary px-2 py-1 text-sm font-semibold text-falcon-harvest rounded-md"
                         >
                           Residential
@@ -74,13 +73,14 @@ export function Portfolio8() {
                       </li>
                     </ul>
                     <Button
+                      asChild
                       title="View project"
                       variant="link"
                       size="link"
                       iconRight={<RxChevronRight />}
                       className="mt-5 font-semibold text-gray-600 md:mt-6"
                     >
-                      <a href="#">View project</a>
+                      <a href="/projects/centurion-roof-replacement">View project</a>
                     </Button>
                   </div>
                 </article>
@@ -91,7 +91,7 @@ export function Portfolio8() {
               <AnimatedCard direction="right" delay={0.2}>
                 <article className="border-none">
                   <div className="aspect-[615/345] w-full overflow-hidden rounded-t-3xl"> 
-                    <a href="#" className="block size-full">
+                    <a href="/projects/midstream-roof-repair" className="block size-full">
                       <img
                         src="https://res.cloudinary.com/fjyy6lhd/image/upload/v1787698663/midstream-cleam_txjcqo.avif"
                         className="size-full object-cover"
@@ -101,13 +101,13 @@ export function Portfolio8() {
                   </div>
                   <div className="px-5 py-6 sm:px-6 rounded-b-3xl bg-falcon-cream shadow-large">
                     <h3 className="mb-2 text-xl font-bold md:text-2xl">
-                      <a href="#">Roof repair services</a>
+                      <a href="/projects/midstream-roof-repair">Roof repair services</a>
                     </h3>
                     <p>Team member access roof to inspect and identify areas requiring repair.</p>
                     <ul className="mt-3 flex flex-wrap gap-2 md:mt-4">
                       <li className="flex">
                         <a
-                          href="#"
+                          href="/services/roof-repair"
                           className="bg-background-secondary px-2 py-1 text-sm font-semibold text-falcon-harvest rounded-md"
                         >
                           Repair
@@ -115,7 +115,7 @@ export function Portfolio8() {
                       </li>
                       <li className="flex">
                         <a
-                          href="#"
+                          href="/service-areas/midstream"
                           className="bg-background-secondary px-2 py-1 text-sm font-semibold text-falcon-harvest rounded-md"
                         >
                           Midstream
@@ -123,7 +123,7 @@ export function Portfolio8() {
                       </li>
                       <li className="flex">
                         <a
-                          href="#"
+                          href="/projects/recent-work"
                           className="bg-background-secondary px-2 py-1 text-sm font-semibold text-falcon-harvest rounded-md"
                         >
                           Recent work
@@ -131,13 +131,14 @@ export function Portfolio8() {
                       </li>
                     </ul>
                     <Button
+                      asChild
                       title="View project"
                       variant="link"
                       size="link"
                       iconRight={<RxChevronRight />}
                       className="mt-5 font-semibold text-gray-600 md:mt-6"
                     >
-                      <a href="#">View project</a>
+                      <a href="/projects/midstream-roof-repair">View project</a>
                     </Button>
                   </div>
                 </article>
@@ -146,8 +147,8 @@ export function Portfolio8() {
           </div>
         <div className="mt-12 flex justify-center md:mt-18 lg:mt-20">
           <TextFade direction="up" staggerChildren={0.2}>
-            <Button className="button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="View all" variant="secondary" size="primary">
-              View all
+            <Button asChild className="button-falcon-secondary text-gray-600 bg-falcon-ink-5 border-border-ink-5" title="View all" variant="secondary" size="primary">
+              <a href="/projects">View all</a>
             </Button>
           </TextFade>
         </div>
